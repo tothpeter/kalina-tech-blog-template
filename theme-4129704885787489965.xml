@@ -3203,33 +3203,34 @@ display:none
     <script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'/>
 
 	<!-- Syntax Highlighter Additions START -->
-<link href='//alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
-<link href='//alexgorbatchev.com/pub/sh/current/styles/shThemeEmacs.css' rel='stylesheet' type='text/css'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
 
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushAS3.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushColdFusion.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushDelphi.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushDiff.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushErlang.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushGroovy.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushJavaFX.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushPowerShell.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushScala.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js' type='text/javascript'/>
-<script src='//alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
+<link href='//agorbatchev.typepad.com/pub/sh/3_0_83/styles/shCore.css' rel='stylesheet' type='text/css'/>
+<link href='//agorbatchev.typepad.com/pub/sh/3_0_83/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shCore.js' type='text/javascript'/>
+
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushAS3.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushBash.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushColdFusion.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushCSharp.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushCpp.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushCss.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushDelphi.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushDiff.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushErlang.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushGroovy.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushJScript.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushJava.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushJavaFX.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushPerl.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushPhp.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushPlain.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushPowerShell.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushPython.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushRuby.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushScala.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushSql.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushVb.js' type='text/javascript'/>
+<script src='//agorbatchev.typepad.com/pub/sh/3_0_83/scripts/shBrushXml.js' type='text/javascript'/>
 
 <script language='javascript' type='text/javascript'>
  SyntaxHighlighter.config.bloggerMode = true;
