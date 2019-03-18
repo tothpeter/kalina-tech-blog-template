@@ -4104,7 +4104,7 @@ display:none
                     <b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
                   </div>
                   <b:section class='sidebar' id='sidebar_feed' name='Sidebar' preferred='yes'>
-                    <b:widget id='Profile1' locked='false' title='About Me' type='Profile' visible='false'>
+                    <b:widget id='Profile1' locked='false' title='About Me' type='Profile' visible='true'>
                       <b:widget-settings>
                         <b:widget-setting name='showaboutme'>true</b:widget-setting>
                         <b:widget-setting name='showlocation'>false</b:widget-setting>
