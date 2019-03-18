@@ -3256,13 +3256,13 @@ display:none
                   <b:section id='header' name='Header' showaddelement='false'>
                     <b:widget id='Header1' locked='true' title='Kalina Tech (Header)' type='Header' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'/>
-                        <b:widget-setting name='displayHeight'>0</b:widget-setting>
-                        <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
-                        <b:widget-setting name='useImage'>false</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/-8t5lwj35FyM/XI7i_X0ad5I/AAAAAAAABnc/0QWAx7GFAvgjiJUtgTXdFfr__yp4xzRRwCK4BGAYYCw/s1600/header.png</b:widget-setting>
+                        <b:widget-setting name='displayHeight'>256</b:widget-setting>
+                        <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+                        <b:widget-setting name='useImage'>true</b:widget-setting>
                         <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                        <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-                        <b:widget-setting name='displayWidth'>0</b:widget-setting>
+                        <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
+                        <b:widget-setting name='displayWidth'>1600</b:widget-setting>
                       </b:widget-settings>
                       <b:includable id='main' var='this'>
     <div class='header-widget'>
