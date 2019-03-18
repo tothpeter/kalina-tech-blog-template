@@ -4299,7 +4299,7 @@ display:none
           <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.list&quot;                             }' name='extendableItems'/>
         </b:includable>
                     </b:widget>
-                    <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='true'>
+                    <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='false'>
                       <b:includable id='main'>
   <b:include name='reportAbuse'/>
 </b:includable>
