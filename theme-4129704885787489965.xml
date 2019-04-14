@@ -2940,6 +2940,13 @@ pre[class*="language-"] {
 
 .token.inserted {
 	color: green;
+}
+
+/* stackedit */
+code {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 3px;
+    padding: 2px 4px;
 }]]></b:skin>
 
     <b:template-skin>
