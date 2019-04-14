@@ -3386,8 +3386,8 @@ code {
                   <b:section id='header' name='Header' showaddelement='false'>
                     <b:widget id='Header1' locked='true' title='Kalina Tech (Header)' type='Header' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/-8t5lwj35FyM/XI7i_X0ad5I/AAAAAAAABnc/0QWAx7GFAvgjiJUtgTXdFfr__yp4xzRRwCK4BGAYYCw/s1600/header.png</b:widget-setting>
-                        <b:widget-setting name='displayHeight'>256</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/--Q4BqCfDf-M/XI_utgxkApI/AAAAAAAABno/YnW2PdSTcocvFYtz13hbUhQkeDOdDSWigCK4BGAYYCw/s1600/header.png</b:widget-setting>
+                        <b:widget-setting name='displayHeight'>257</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='useImage'>true</b:widget-setting>
                         <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
