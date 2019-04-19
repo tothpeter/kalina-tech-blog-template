@@ -4523,7 +4523,6 @@ iframe {
       <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
         <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
           <b:widget-settings>
-            <b:widget-setting name='copyright'/>
           </b:widget-settings>
           <b:includable id='main' var='this'>
   <div class='widget-content'>
