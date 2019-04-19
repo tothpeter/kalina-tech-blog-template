@@ -3755,28 +3755,33 @@ iframe {
                 </b:section>
 
                 <b:section class='main' id='page_body' name='Page Body' showaddelement='false'>
-                  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'>
+                  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#729c0b</b:widget-setting>
+                      <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
                       <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#efefef</b:widget-setting>
-                      <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                      <b:widget-setting name='authorLabel'>Posted by:</b:widget-setting>
                       <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#f7f7f7</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                      <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
                       <b:widget-setting name='timestampLabel'/>
+                      <b:widget-setting name='reactionsLabel'>Reactions</b:widget-setting>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                      <b:widget-setting name='showLabels'>true</b:widget-setting>
-                      <b:widget-setting name='showLocation'>true</b:widget-setting>
-                      <b:widget-setting name='postLabelsLabel'/>
+                      <b:widget-setting name='showLocation'>false</b:widget-setting>
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                       <b:widget-setting name='postsPerAd'>2</b:widget-setting>
-                      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                       <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='backlinksLabel'>Related Posts</b:widget-setting>
+                      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#729c0b</b:widget-setting>
+                      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#efefef</b:widget-setting>
+                      <b:widget-setting name='postLocationLabel'/>
+                      <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#f7f7f7</b:widget-setting>
+                      <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='showLabels'>true</b:widget-setting>
+                      <b:widget-setting name='postLabelsLabel'/>
+                      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                       <b:widget-setting name='showInlineAds'>true</b:widget-setting>
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
@@ -4433,7 +4438,7 @@ iframe {
                       <b:widget-settings>
                         <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
                         <b:widget-setting name='display'>LIST</b:widget-setting>
-                        <b:widget-setting name='selectedLabelsList'/>
+                        <b:widget-setting name='selectedLabelsList'>Business,Music,Sports,Technology</b:widget-setting>
                         <b:widget-setting name='showType'>ALL</b:widget-setting>
                         <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
                       </b:widget-settings>
@@ -4470,7 +4475,7 @@ iframe {
                 </b:if>
                 <b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
                   <b:section id='sidebar_item' name='Sidebar (Item Page)'>
-                    <b:widget cond='data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='' type='PopularPosts' visible='true'>
+                    <b:widget cond='data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='Popular Posts' type='PopularPosts' visible='true'>
                       <b:widget-settings>
                         <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
                         <b:widget-setting name='showThumbnails'>true</b:widget-setting>
