@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='vegeclub.xml' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
@@ -2978,6 +2979,433 @@ iframe {
     max-width:90%
   }
 }
+
+/* Top Bar CSS */
+
+#top-bar {
+	width: 100%;
+	background-color: #222;
+	overflow: hidden;
+	margin: 0
+}
+
+#top-bar.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 8;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 425px) {
+	#top-bar {
+		display: none
+	}
+}
+
+@media screen and (min-width: 426px) {
+  .item-view .page_body {
+    padding-top: 103px;
+  }
+
+  .centered-top-container.sticky {
+    top: 34px;
+  }
+}
+
+.top-bar-nav {
+	position: relative;
+	float: left;
+	display: block
+}
+
+.top-bar-nav .widget>.widget-title {
+	display: none
+}
+
+#top-bar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar-nav ul li {
+	float: left;
+  list-style: none;
+}
+
+.top-bar-nav ul li>a {
+	height: 34px;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 34px;
+	margin: 0 10px 0 0;
+	padding: 0 5px;
+	transition: color .17s
+}
+
+.top-bar-nav ul li:first-child>a {
+	padding: 0 5px 0 0
+}
+
+.top-bar-nav ul>li:hover>a {
+	color: $(main.color)
+}
+
+.top-bar-social {
+	position: relative;
+	float: right;
+	display: block
+}
+
+.top-bar-social .widget>.widget-title {
+	display: none
+}
+
+.top-bar-social ul>li {
+	float: left;
+	display: inline-block
+}
+
+.top-bar-social ul>li>a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+	line-height: 34px;
+	padding: 0 5px;
+	margin: 0 0 0 10px;
+	transition: color .17s
+}
+
+.top-bar-social ul>li:last-child>a {
+	padding: 0 0 0 5px
+}
+
+.top-bar-social ul>li:hover>a {
+	color: $(main.color)
+}
+
+/* Social icon CSS */
+.social a:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: 400
+}
+
+.social .facebook a:before {
+	content: "\f09a"
+}
+
+.social .twitter a:before {
+	content: "\f099"
+}
+
+.social .rss a:before {
+	content: "\f09e"
+}
+
+.social .youtube a:before {
+	content: "\f16a"
+}
+
+.social .skype a:before {
+	content: "\f17e"
+}
+
+.social .stumbleupon a:before {
+	content: "\f1a4"
+}
+
+.social .tumblr a:before {
+	content: "\f173"
+}
+
+.social .vk a:before {
+	content: "\f189"
+}
+
+.social .stack-overflow a:before {
+	content: "\f16c"
+}
+
+.social .github a:before {
+	content: "\f09b"
+}
+
+.social .linkedin a:before {
+	content: "\f0e1"
+}
+
+.social .dribbble a:before {
+	content: "\f17d"
+}
+
+.social .soundcloud a:before {
+	content: "\f1be"
+}
+
+.social .behance a:before {
+	content: "\f1b4"
+}
+
+.social .digg a:before {
+	content: "\f1a6"
+}
+
+.social .instagram a:before {
+	content: "\f16d"
+}
+
+.social .pinterest a:before {
+	content: "\f0d2"
+}
+
+.social .twitch a:before {
+	content: "\f1e8"
+}
+
+.social .delicious a:before {
+	content: "\f1a5"
+}
+
+.social .codepen a:before {
+	content: "\f1cb"
+}
+
+.social .reddit a:before {
+	content: "\f1a1"
+}
+
+.social .whatsapp a:before {
+	content: "\f232"
+}
+
+.social .snapchat a:before {
+	content: "\f2ac"
+}
+
+.social .email a:before {
+	content: "\f0e0"
+}
+
+.social .external-link a:before {
+	content: "\f35d"
+}
+
+.social-color .facebook a {
+	background-color: #3b5999
+}
+
+.social-color .twitter a {
+	background-color: #00acee
+}
+
+.social-color .youtube a {
+	background-color: #db4a39
+}
+
+.social-color .instagram a {
+	background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4)
+}
+
+.social-color .pinterest a {
+	background-color: #ca2127
+}
+
+.social-color .dribbble a {
+	background-color: #ea4c89
+}
+
+.social-color .linkedin a {
+	background-color: #0077b5
+}
+
+.social-color .tumblr a {
+	background-color: #365069
+}
+
+.social-color .twitch a {
+	background-color: #6441a5
+}
+
+.social-color .rss a {
+	background-color: #ffc200
+}
+
+.social-color .skype a {
+	background-color: #00aff0
+}
+
+.social-color .stumbleupon a {
+	background-color: #eb4823
+}
+
+.social-color .vk a {
+	background-color: #4a76a8
+}
+
+.social-color .stack-overflow a {
+	background-color: #f48024
+}
+
+.social-color .github a {
+	background-color: #24292e
+}
+
+.social-color .soundcloud a {
+	background: linear-gradient(#ff7400, #ff3400)
+}
+
+.social-color .behance a {
+	background-color: #191919
+}
+
+.social-color .digg a {
+	background-color: #1b1a19
+}
+
+.social-color .delicious a {
+	background-color: #0076e8
+}
+
+.social-color .codepen a {
+	background-color: #000
+}
+
+.social-color .reddit a {
+	background-color: #ff4500
+}
+
+.social-color .whatsapp a {
+	background-color: #3fbb50
+}
+
+.social-color .snapchat a {
+	background-color: #ffe700
+}
+
+.social-color .email a {
+	background-color: #888
+}
+
+.social-color .external-link a {
+	background-color: $(main.dark.color)
+}
+
+.social-text .facebook a:after {
+	content: "Facebook"
+}
+
+.social-text .twitter a:after {
+	content: "Twitter"
+}
+
+.social-text .rss a:after {
+	content: "Rss"
+}
+
+.social-text .youtube a:after {
+	content: "YouTube"
+}
+
+.social-text .skype a:after {
+	content: "Skype"
+}
+
+.social-text .stumbleupon a:after {
+	content: "StumbleUpon"
+}
+
+.social-text .tumblr a:after {
+	content: "Tumblr"
+}
+
+.social-text .vk a:after {
+	content: "VKontakte"
+}
+
+.social-text .stack-overflow a:after {
+	content: "Stack Overflow"
+}
+
+.social-text .github a:after {
+	content: "Github"
+}
+
+.social-text .linkedin a:after {
+	content: "LinkedIn"
+}
+
+.social-text .dribbble a:after {
+	content: "Dribbble"
+}
+
+.social-text .soundcloud a:after {
+	content: "SoundCloud"
+}
+
+.social-text .behance a:after {
+	content: "Behance"
+}
+
+.social-text .digg a:after {
+	content: "Digg"
+}
+
+.social-text .instagram a:after {
+	content: "Instagram"
+}
+
+.social-text .pinterest a:after {
+	content: "Pinterest"
+}
+
+.social-text .twitch a:after {
+	content: "Twitch"
+}
+
+.social-text .delicious a:after {
+	content: "Delicious"
+}
+
+.social-text .codepen a:after {
+	content: "CodePen"
+}
+
+.social-text .flipboard a:after {
+	content: "Flipboard"
+}
+
+.social-text .reddit a:after {
+	content: "Reddit"
+}
+
+.social-text .whatsapp a:after {
+	content: "Whatsapp"
+}
+
+.social-text .messenger a:after {
+	content: "Messenger"
+}
+
+.social-text .snapchat a:after {
+	content: "Snapchat"
+}
+
+.social-text .email a:after {
+	content: "Email"
+}
+
+.social-text .external-link a:after {
+	content: "WebSite"
+}
+
 ]]></b:skin>
 
     <b:template-skin>
@@ -3384,6 +3812,69 @@ iframe {
     <div class='page'>
       <b:with value='data:widgets.AdSense any (w =&gt; w.sectionId == &quot;ads&quot;)' var='hasVerticalAds'>
         <div class='page_body'>
+
+
+          <!-- top bar starts -->
+          <div id='top-bar'>
+            <b:class cond='data:view.isSingleItem' name='sticky'/>
+            <div class='centered'>
+                <b:section class='top-bar-nav' id='top-bar-nav' maxwidgets='1' name='Top Navigation' showaddelement='yes'>
+                  <b:widget id='LinkList72' locked='true' title='' type='LinkList' version='2' visible='true'>
+                    <b:widget-settings>
+                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='text-1'>About</b:widget-setting>
+                      <b:widget-setting name='link-1'>#</b:widget-setting>
+                      <b:widget-setting name='text-0'>Home</b:widget-setting>
+                      <b:widget-setting name='link-2'>http://www.what.energy/</b:widget-setting>
+                      <b:widget-setting name='link-0'>/</b:widget-setting>
+                      <b:widget-setting name='text-2'>What Energy?</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+                      <b:include name='content'/>
+                    </b:includable>
+                    <b:includable id='content'>
+                      <div class='widget-content'>
+                        <ul>
+                          <b:loop values='data:links' var='link'>
+                            <li><a expr:href='data:link.target'><data:link.name/></a></li>
+                          </b:loop>
+                        </ul>
+                      </div>
+                    </b:includable>
+                  </b:widget>
+                </b:section>
+
+              <!-- Top Social -->
+                <b:section class='top-bar-social social' id='top-bar-social' maxwidgets='1' name='Social Top' showaddelement='yes'>
+                  <b:widget id='LinkList73' locked='true' title='' type='LinkList' version='2' visible='true'>
+                    <b:widget-settings>
+                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='text-1'>twitter</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://twitter.com/tomaaa08</b:widget-setting>
+                      <b:widget-setting name='text-0'>linkedin</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://www.instagram.com/tomaaa08/</b:widget-setting>
+                      <b:widget-setting name='link-0'>https://www.linkedin.com/in/tothpeter08/</b:widget-setting>
+                      <b:widget-setting name='text-2'>instagram</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+                      <b:include name='content'/>
+                    </b:includable>
+                    <b:includable id='content'>
+                      <div class='widget-content'>
+                        <ul>
+                          <b:loop values='data:links' var='link'>
+                            <li expr:class='data:link.name'><a expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+                          </b:loop>
+                        </ul>
+                      </div>
+                    </b:includable>
+                  </b:widget>
+                </b:section>
+            </div>
+          </div>
+          <!-- top bar ends -->
+
+
           <b:class cond='data:hasVerticalAds' name='has-vertical-ads'/>
 
           <b:if cond='data:view.isSingleItem'>
@@ -4528,6 +5019,7 @@ iframe {
       <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
         <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
           <b:widget-settings>
+            <b:widget-setting name='copyright'/>
           </b:widget-settings>
           <b:includable id='main' var='this'>
   <div class='widget-content'>
