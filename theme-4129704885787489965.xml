@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='vegeclub.xml' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
@@ -3013,6 +3013,10 @@ iframe {
   .centered-top-container.sticky {
     top: 34px;
   }
+
+  .centered-top-container.sticky.animating {
+    top: 0;
+  }
 }
 
 .top-bar-nav {
@@ -3823,7 +3827,7 @@ iframe {
                     <b:widget-settings>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='text-1'>About</b:widget-setting>
-                      <b:widget-setting name='link-1'>#</b:widget-setting>
+                      <b:widget-setting name='link-1'>p/about_19.html</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
                       <b:widget-setting name='link-2'>http://www.what.energy/</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
@@ -3848,13 +3852,17 @@ iframe {
                 <b:section class='top-bar-social social' id='top-bar-social' maxwidgets='1' name='Social Top' showaddelement='yes'>
                   <b:widget id='LinkList73' locked='true' title='' type='LinkList' version='2' visible='true'>
                     <b:widget-settings>
+                      <b:widget-setting name='link-3'>https://stackoverflow.com/users/3941583/p%C3%A9ter-t%C3%B3th-toma</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='text-1'>twitter</b:widget-setting>
-                      <b:widget-setting name='link-1'>https://twitter.com/tomaaa08</b:widget-setting>
-                      <b:widget-setting name='text-0'>linkedin</b:widget-setting>
-                      <b:widget-setting name='link-2'>https://www.instagram.com/tomaaa08/</b:widget-setting>
-                      <b:widget-setting name='link-0'>https://www.linkedin.com/in/tothpeter08/</b:widget-setting>
-                      <b:widget-setting name='text-2'>instagram</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://www.linkedin.com/in/tothpeter08/</b:widget-setting>
+                      <b:widget-setting name='text-1'>instagram</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://www.instagram.com/tomaaa08/</b:widget-setting>
+                      <b:widget-setting name='text-0'>twitter</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://github.com/tothpeter</b:widget-setting>
+                      <b:widget-setting name='text-3'>stack-overflow</b:widget-setting>
+                      <b:widget-setting name='link-0'>https://twitter.com/tomaaa08</b:widget-setting>
+                      <b:widget-setting name='text-2'>github</b:widget-setting>
+                      <b:widget-setting name='text-4'>linkedin</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
                       <b:include name='content'/>
