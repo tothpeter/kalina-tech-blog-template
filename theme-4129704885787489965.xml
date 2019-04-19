@@ -2942,6 +2942,7 @@ pre[class*="language-"] {
 	color: green;
 }
 
+/* Own CSS Styles */
 /* stackedit */
 code {
     background-color: rgba(0,0,0,.05);
@@ -2954,6 +2955,28 @@ code {
 
 iframe {
   border: none;
+}
+
+.centered-top-container img, .centered-top-placeholder img {
+  max-width:50%
+}
+
+@media (max-width:768px){
+  .centered-top-container img, .centered-top-placeholder img {
+    margin-top:15px;
+  }
+}
+
+@media (max-width:425px){
+  .centered-top-container img, .centered-top-placeholder img {
+    max-width:65%
+  }
+}
+
+@media (max-width:425px){
+  .centered-top-container img, .centered-top-placeholder img {
+    max-width:90%
+  }
 }
 ]]></b:skin>
 
@@ -3394,8 +3417,8 @@ iframe {
                   <b:section id='header' name='Header' showaddelement='false'>
                     <b:widget id='Header1' locked='true' title='Kalina Tech (Header)' type='Header' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/--Q4BqCfDf-M/XI_utgxkApI/AAAAAAAABno/YnW2PdSTcocvFYtz13hbUhQkeDOdDSWigCK4BGAYYCw/s1600/header.png</b:widget-setting>
-                        <b:widget-setting name='displayHeight'>257</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-2a_OhNDJElU/XLmQnNhSy7I/AAAAAAAABq0/7raVkgPGp74rxCr9JM7CsHZDxtIk9ajCgCK4BGAYYCw/s1600/header_big.png</b:widget-setting>
+                        <b:widget-setting name='displayHeight'>229</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='useImage'>true</b:widget-setting>
                         <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
@@ -3598,10 +3621,11 @@ iframe {
                 </b:if>
 
                 <b:section class='featured-post' id='featured_post' name='Featured Post' showaddelement='false'>
-                  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='' type='FeaturedPost' visible='true'>
+                  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='Featured Post' type='FeaturedPost' visible='true'>
                     <b:widget-settings>
                       <b:widget-setting name='showSnippet'>false</b:widget-setting>
                       <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+                      <b:widget-setting name='postId'>8341940739574751850</b:widget-setting>
                       <b:widget-setting name='showFirstImage'>true</b:widget-setting>
                       <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
                     </b:widget-settings>
