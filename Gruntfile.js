@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     watch: {
       styles: {
         files: ['css/*', 'theme/*'],
-        tasks: ['sass:dist', 'sassUnicode', 'htmlbuild:dist'],
+        tasks: ['compile'],
         options: {
           spawn: false,
         },
@@ -53,5 +53,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-sass-unicode');
 
-  grunt.registerTask('default', ['sass', 'sassUnicode']);
+  grunt.registerTask('compile', ['sass:dist', 'sassUnicode:dist', 'htmlbuild:dist']);
+  grunt.registerTask('default', 'compile');
 };

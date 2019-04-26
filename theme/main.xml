@@ -2963,7 +2963,7 @@ display:none
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>AAAAAAAAAAAAAAA
+                <data:post.title/>
               </b:if>
             </h3>
           </div>
@@ -3616,7 +3616,7 @@ display:none
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>BBBBBBBBBBB
+                <data:post.title/>
               </b:if>
             </h3>
           </div>
