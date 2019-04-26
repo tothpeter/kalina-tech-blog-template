@@ -20,6 +20,7 @@
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-html-build": "^0.7.1"
+    "grunt-html-build": "^0.7.1",
+    "grunt-sass-unicode": "^0.1.3"
   }
 }

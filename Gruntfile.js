@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     watch: {
       styles: {
         files: ['css/styles.scss', 'template/main.xml'],
-        tasks: ['sass:dist', 'htmlbuild:dist'],
+        tasks: ['sass:dist', 'sassUnicode', 'htmlbuild:dist'],
         options: {
           spawn: false,
         },
@@ -30,11 +30,18 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded',
-          sourcemap: 'none',
-          cacheLocation: 'tmp/.sass-cache'
+          // sourcemap: 'none',
         },
         files: {
           'tmp/styles.css': 'css/styles.scss'
+        }
+      }
+    },
+
+    sassUnicode: {
+      dist: {
+        files: {
+          './tmp/styles.css': './tmp/styles.css'
         }
       }
     }
@@ -43,4 +50,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-html-build');
+  grunt.loadNpmTasks('grunt-sass-unicode');
+
+  grunt.registerTask('default', ['sass', 'sassUnicode']);
 };
