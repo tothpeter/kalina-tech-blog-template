@@ -30,7 +30,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded',
-          // sourcemap: 'none',
+          sourcemap: 'none',
+          cacheLocation: 'tmp/.sass-cache'
         },
         files: {
           'tmp/styles.css': 'css/styles.scss'
