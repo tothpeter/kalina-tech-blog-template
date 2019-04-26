@@ -2945,53 +2945,12 @@ pre[class*="language-"] {
   color: green;
 }
 
-/* Own CSS Styles */
-/* stackedit */
+/* Stackedit */
 code {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 
-/* responsive Youtube videos */
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-iframe {
-  border: none;
-}
-
-.centered-top-container img, .centered-top-placeholder img {
-  max-width: 50%;
-}
-
-@media (max-width: 768px) {
-  .centered-top-container img, .centered-top-placeholder img {
-    margin-top: 15px;
-  }
-}
-@media (max-width: 425px) {
-  .centered-top-container img, .centered-top-placeholder img {
-    max-width: 65%;
-  }
-}
-@media (max-width: 425px) {
-  .centered-top-container img, .centered-top-placeholder img {
-    max-width: 90%;
-  }
-}
 /* Top Bar CSS */
 #top-bar {
   width: 100%;
@@ -3073,18 +3032,7 @@ iframe {
   display: block;
 }
 
-/* Post CSS */
-/* Post Title CSS */
-.post-meta .post-author:before {
-  content: '\f2c0';
-}
-
-.item-post .post-meta {
-  padding: 0 1px 10px;
-  border-bottom: 1px solid #eaeaea;
-}
-
-/* Social icon CSS */
+/* Social icon */
 .social a:before {
   display: inline-block;
   font-family: FontAwesome;
@@ -3396,6 +3344,63 @@ iframe {
   content: "WebSite";
 }
 
+/* responsive Youtube videos */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+.centered-top-container img, .centered-top-placeholder img {
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .centered-top-container img, .centered-top-placeholder img {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .centered-top-container img, .centered-top-placeholder img {
+    max-width: 65%;
+  }
+}
+@media (max-width: 425px) {
+  .centered-top-container img, .centered-top-placeholder img {
+    max-width: 90%;
+  }
+}
+/* Post CSS */
+/* Post Title CSS */
+.item-view .post-title {
+  margin-bottom: 10px;
+}
+.item-view .post-title-container .post-meta {
+  padding: 0 1px 6px;
+  border-bottom: 1px solid #eaeaea;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+.item-view .post-title-container .post-meta .post-author,
+.item-view .post-title-container .post-meta .post-date {
+  margin: 0 10px 0 0;
+}
+
 <!-- Own Styles Ends -->
 ]]></b:skin>
 
@@ -3535,7 +3540,7 @@ iframe {
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>AAA
+                <data:post.title/>
               </b:if>
             </h3>
           </div>
@@ -4188,7 +4193,7 @@ iframe {
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>BBB
+                <data:post.title/>
               </b:if>
             </h3>
           </div>
@@ -4635,12 +4640,11 @@ iframe {
               <b:else/>
                 <data:post.title/>
               </b:if>
-              <div class='post-meta'>
-                <span class='post-author'><i class="fas fa-camera"></i> <data:post.author.name/></span>
-                <span class='post-date published' expr:datetime='data:post.date.iso8601'><i class="fas fa-camera"></i> <data:post.date/></span>
-                <span class='post-date published'><data:post.date/></span>
-              </div>
             </h3>
+            <div class='post-meta'>
+              <span class='post-author'><i class="fa fa-user-o"></i> <data:post.author.name/></span>
+              <span class='post-date published' expr:datetime='data:post.date.iso8601'><i class="fa fa-clock-o"></i> <data:post.date/></span>
+            </div>
           </div>
         </b:includable>
                     <b:includable id='postWrapperClasses'>
