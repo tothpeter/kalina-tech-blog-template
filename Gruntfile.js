@@ -6,11 +6,23 @@ module.exports = function(grunt) {
 
     watch: {
       styles: {
-        files: ['css/styles.scss'],
-        tasks: ['sass:dist'],
+        files: ['css/styles.scss', 'template/main.xml'],
+        tasks: ['sass:dist', 'htmlbuild:dist'],
         options: {
           spawn: false,
         },
+      }
+    },
+
+    htmlbuild: {
+      dist: {
+        src: 'template/main.xml',
+        dest: 'tmp/generated-template.xml',
+        options: {
+          sections: {
+            styles: 'tmp/styles.css'
+          }
+        }
       }
     },
 
@@ -28,6 +40,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-html-build');
 };
