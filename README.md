@@ -5,3 +5,7 @@
 
 ## Installation for development
 * `npm install`
+* `gem install sass`
+
+## Autogenerate files while developing
+* `grunt watch`

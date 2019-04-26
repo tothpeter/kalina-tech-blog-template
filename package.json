@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tothpeter/kalina-tech-blog-template/issues"
   },
-  "homepage": "https://github.com/tothpeter/kalina-tech-blog-template#readme"
+  "homepage": "https://github.com/tothpeter/kalina-tech-blog-template#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0"
+  }
 }
