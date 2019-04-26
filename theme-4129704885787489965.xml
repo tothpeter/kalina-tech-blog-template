@@ -2819,55 +2819,55 @@ display:none
 }
 .prettyprint {
   padding: 6px 10px;
-}/* PrismJS 1.16.0
+}
+
+<!-- Own Styles Starts -->
+@charset "UTF-8";
+/* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+bash+ruby+git+yaml */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #ccc;
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-
+code[class*=language-],
+pre[class*=language-] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #2d2d2d;
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: #2d2d2d;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
 }
 
 .token.comment,
@@ -2875,35 +2875,35 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #999;
+  color: #999;
 }
 
 .token.punctuation {
-	color: #ccc;
+  color: #ccc;
 }
 
 .token.tag,
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: #e2777a;
+  color: #e2777a;
 }
 
 .token.function-name {
-	color: #6196cc;
+  color: #6196cc;
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-	color: #f08d49;
+  color: #f08d49;
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-	color: #f8c555;
+  color: #f8c555;
 }
 
 .token.selector,
@@ -2911,7 +2911,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: #cc99cd;
+  color: #cc99cd;
 }
 
 .token.string,
@@ -2919,74 +2919,85 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: #7ec699;
+  color: #7ec699;
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-	color: #67cdcc;
+  color: #67cdcc;
 }
 
 .token.important,
 .token.bold {
-	font-weight: bold;
+  font-weight: bold;
 }
+
 .token.italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .token.entity {
-	cursor: help;
+  cursor: help;
 }
 
 .token.inserted {
-	color: green;
+  color: green;
 }
 
 /* Own CSS Styles */
 /* stackedit */
 code {
-  background-color: rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 
 /* responsive Youtube videos */
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 iframe {
   border: none;
 }
 
 .centered-top-container img, .centered-top-placeholder img {
-  max-width:50%
+  max-width: 50%;
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
   .centered-top-container img, .centered-top-placeholder img {
-    margin-top:15px;
+    margin-top: 15px;
   }
 }
-
-@media (max-width:425px){
+@media (max-width: 425px) {
   .centered-top-container img, .centered-top-placeholder img {
-    max-width:65%
+    max-width: 65%;
   }
 }
-
-@media (max-width:425px){
+@media (max-width: 425px) {
   .centered-top-container img, .centered-top-placeholder img {
-    max-width:90%
+    max-width: 90%;
   }
 }
-
 /* Top Bar CSS */
-
 #top-bar {
-	width: 100%;
-	background-color: #222;
-	overflow: hidden;
-	margin: 0
+  width: 100%;
+  background-color: #222;
+  overflow: hidden;
+  margin: 0;
 }
 
 #top-bar.sticky {
@@ -3000,11 +3011,10 @@ iframe {
 }
 
 @media screen and (max-width: 425px) {
-	#top-bar {
-		display: none
-	}
+  #top-bar {
+    display: none;
+  }
 }
-
 @media screen and (min-width: 426px) {
   .item-view .page_body {
     padding-top: 103px;
@@ -3018,15 +3028,14 @@ iframe {
     top: 0;
   }
 }
-
 .top-bar-nav {
-	position: relative;
-	float: left;
-	display: block
+  position: relative;
+  float: left;
+  display: block;
 }
 
-.top-bar-nav .widget>.widget-title {
-	display: none
+.top-bar-nav .widget > .widget-title {
+  display: none;
 }
 
 #top-bar .top-bar-nav ul {
@@ -3035,22 +3044,22 @@ iframe {
 }
 
 #top-bar li {
-	float: left;
+  float: left;
   list-style: none;
 }
 
 #top-bar a {
-	height: 34px;
-	display: block;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 34px;
-	padding: 0 10px;
+  height: 34px;
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 0 10px;
 }
 
 #top-bar a:hover {
-  background: linear-gradient(180deg, rgba(34,34,34,1) 20%, rgba(0,85,102,1) 100%);
+  background: linear-gradient(180deg, #222222 20%, #005566 100%);
 }
 
 #top-bar .top-bar-social ul {
@@ -3059,15 +3068,15 @@ iframe {
 }
 
 #top-bar .top-bar-social {
-	position: relative;
-	float: right;
-	display: block
+  position: relative;
+  float: right;
+  display: block;
 }
 
 /* Post CSS */
 /* Post Title CSS */
 .post-meta .post-author:before {
-  content: '\f2c0';
+  content: "\f2c0";
 }
 
 .item-post .post-meta {
@@ -3077,316 +3086,319 @@ iframe {
 
 /* Social icon CSS */
 .social a:before {
-	display: inline-block;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: 400
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .social .facebook a:before {
-	content: "\f09a"
+  content: "\f09a";
 }
 
 .social .twitter a:before {
-	content: "\f099"
+  content: "\f099";
 }
 
 .social .rss a:before {
-	content: "\f09e"
+  content: "\f09e";
 }
 
 .social .youtube a:before {
-	content: "\f16a"
+  content: "\f16a";
 }
 
 .social .skype a:before {
-	content: "\f17e"
+  content: "\f17e";
 }
 
 .social .stumbleupon a:before {
-	content: "\f1a4"
+  content: "\f1a4";
 }
 
 .social .tumblr a:before {
-	content: "\f173"
+  content: "\f173";
 }
 
 .social .vk a:before {
-	content: "\f189"
+  content: "\f189";
 }
 
 .social .stack-overflow a:before {
-	content: "\f16c"
+  content: "\f16c";
 }
 
 .social .github a:before {
-	content: "\f09b"
+  content: "\f09b";
 }
 
 .social .linkedin a:before {
-	content: "\f0e1"
+  content: "\f0e1";
 }
 
 .social .dribbble a:before {
-	content: "\f17d"
+  content: "\f17d";
 }
 
 .social .soundcloud a:before {
-	content: "\f1be"
+  content: "\f1be";
 }
 
 .social .behance a:before {
-	content: "\f1b4"
+  content: "\f1b4";
 }
 
 .social .digg a:before {
-	content: "\f1a6"
+  content: "\f1a6";
 }
 
 .social .instagram a:before {
-	content: "\f16d"
+  content: "\f16d";
 }
 
 .social .pinterest a:before {
-	content: "\f0d2"
+  content: "\f0d2";
 }
 
 .social .twitch a:before {
-	content: "\f1e8"
+  content: "\f1e8";
 }
 
 .social .delicious a:before {
-	content: "\f1a5"
+  content: "\f1a5";
 }
 
 .social .codepen a:before {
-	content: "\f1cb"
+  content: "\f1cb";
 }
 
 .social .reddit a:before {
-	content: "\f1a1"
+  content: "\f1a1";
 }
 
 .social .whatsapp a:before {
-	content: "\f232"
+  content: "\f232";
 }
 
 .social .snapchat a:before {
-	content: "\f2ac"
+  content: "\f2ac";
 }
 
 .social .email a:before {
-	content: "\f0e0"
+  content: "\f0e0";
 }
 
 .social .external-link a:before {
-	content: "\f35d"
+  content: "\f35d";
 }
 
 .social-color .facebook a {
-	background-color: #3b5999
+  background-color: #3b5999;
 }
 
 .social-color .twitter a {
-	background-color: #00acee
+  background-color: #00acee;
 }
 
 .social-color .youtube a {
-	background-color: #db4a39
+  background-color: #db4a39;
 }
 
 .social-color .instagram a {
-	background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4)
+  background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
 }
 
 .social-color .pinterest a {
-	background-color: #ca2127
+  background-color: #ca2127;
 }
 
 .social-color .dribbble a {
-	background-color: #ea4c89
+  background-color: #ea4c89;
 }
 
 .social-color .linkedin a {
-	background-color: #0077b5
+  background-color: #0077b5;
 }
 
 .social-color .tumblr a {
-	background-color: #365069
+  background-color: #365069;
 }
 
 .social-color .twitch a {
-	background-color: #6441a5
+  background-color: #6441a5;
 }
 
 .social-color .rss a {
-	background-color: #ffc200
+  background-color: #ffc200;
 }
 
 .social-color .skype a {
-	background-color: #00aff0
+  background-color: #00aff0;
 }
 
 .social-color .stumbleupon a {
-	background-color: #eb4823
+  background-color: #eb4823;
 }
 
 .social-color .vk a {
-	background-color: #4a76a8
+  background-color: #4a76a8;
 }
 
 .social-color .stack-overflow a {
-	background-color: #f48024
+  background-color: #f48024;
 }
 
 .social-color .github a {
-	background-color: #24292e
+  background-color: #24292e;
 }
 
 .social-color .soundcloud a {
-	background: linear-gradient(#ff7400, #ff3400)
+  background: linear-gradient(#ff7400, #ff3400);
 }
 
 .social-color .behance a {
-	background-color: #191919
+  background-color: #191919;
 }
 
 .social-color .digg a {
-	background-color: #1b1a19
+  background-color: #1b1a19;
 }
 
 .social-color .delicious a {
-	background-color: #0076e8
+  background-color: #0076e8;
 }
 
 .social-color .codepen a {
-	background-color: #000
+  background-color: #000;
 }
 
 .social-color .reddit a {
-	background-color: #ff4500
+  background-color: #ff4500;
 }
 
 .social-color .whatsapp a {
-	background-color: #3fbb50
+  background-color: #3fbb50;
 }
 
 .social-color .snapchat a {
-	background-color: #ffe700
+  background-color: #ffe700;
 }
 
 .social-color .email a {
-	background-color: #888
+  background-color: #888;
 }
 
 .social-text .facebook a:after {
-	content: "Facebook"
+  content: "Facebook";
 }
 
 .social-text .twitter a:after {
-	content: "Twitter"
+  content: "Twitter";
 }
 
 .social-text .rss a:after {
-	content: "Rss"
+  content: "Rss";
 }
 
 .social-text .youtube a:after {
-	content: "YouTube"
+  content: "YouTube";
 }
 
 .social-text .skype a:after {
-	content: "Skype"
+  content: "Skype";
 }
 
 .social-text .stumbleupon a:after {
-	content: "StumbleUpon"
+  content: "StumbleUpon";
 }
 
 .social-text .tumblr a:after {
-	content: "Tumblr"
+  content: "Tumblr";
 }
 
 .social-text .vk a:after {
-	content: "VKontakte"
+  content: "VKontakte";
 }
 
 .social-text .stack-overflow a:after {
-	content: "Stack Overflow"
+  content: "Stack Overflow";
 }
 
 .social-text .github a:after {
-	content: "Github"
+  content: "Github";
 }
 
 .social-text .linkedin a:after {
-	content: "LinkedIn"
+  content: "LinkedIn";
 }
 
 .social-text .dribbble a:after {
-	content: "Dribbble"
+  content: "Dribbble";
 }
 
 .social-text .soundcloud a:after {
-	content: "SoundCloud"
+  content: "SoundCloud";
 }
 
 .social-text .behance a:after {
-	content: "Behance"
+  content: "Behance";
 }
 
 .social-text .digg a:after {
-	content: "Digg"
+  content: "Digg";
 }
 
 .social-text .instagram a:after {
-	content: "Instagram"
+  content: "Instagram";
 }
 
 .social-text .pinterest a:after {
-	content: "Pinterest"
+  content: "Pinterest";
 }
 
 .social-text .twitch a:after {
-	content: "Twitch"
+  content: "Twitch";
 }
 
 .social-text .delicious a:after {
-	content: "Delicious"
+  content: "Delicious";
 }
 
 .social-text .codepen a:after {
-	content: "CodePen"
+  content: "CodePen";
 }
 
 .social-text .flipboard a:after {
-	content: "Flipboard"
+  content: "Flipboard";
 }
 
 .social-text .reddit a:after {
-	content: "Reddit"
+  content: "Reddit";
 }
 
 .social-text .whatsapp a:after {
-	content: "Whatsapp"
+  content: "Whatsapp";
 }
 
 .social-text .messenger a:after {
-	content: "Messenger"
+  content: "Messenger";
 }
 
 .social-text .snapchat a:after {
-	content: "Snapchat"
+  content: "Snapchat";
 }
 
 .social-text .email a:after {
-	content: "Email"
+  content: "Email";
 }
 
 .social-text .external-link a:after {
-	content: "WebSite"
+  content: "WebSite";
 }
 
+/*# sourceMappingURL=styles.css.map */
+
+<!-- Own Styles Ends -->
 ]]></b:skin>
 
     <b:template-skin>
