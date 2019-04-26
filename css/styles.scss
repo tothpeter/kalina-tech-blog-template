@@ -34,11 +34,25 @@ iframe {
 
 /* Post CSS */
 /* Post Title CSS */
-.post-meta .post-author:before {
-  content: '\f2c0';
-}
 
-.item-post .post-meta {
-  padding: 0 1px 10px;
-  border-bottom: 1px solid #eaeaea;
+.item-view {
+	.post-title {
+		margin-bottom: 10px;
+	}
+
+	.post-title-container {
+		.post-meta {
+			padding: 0 1px 6px;
+		  border-bottom: 1px solid #eaeaea;
+
+	    color: #aaa;
+	    font-size: 12px;
+	    font-weight: 400;
+
+			.post-author,
+			.post-date {
+	    	margin: 0 10px 0 0;
+			}
+		}
+	}
 }
