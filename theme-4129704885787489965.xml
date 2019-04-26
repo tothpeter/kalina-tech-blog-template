@@ -3064,6 +3064,17 @@ iframe {
 	display: block
 }
 
+/* Post CSS */
+/* Post Title CSS */
+.post-meta .post-author:before {
+  content: '\f2c0';
+}
+
+.item-post .post-meta {
+  padding: 0 1px 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
 /* Social icon CSS */
 .social a:before {
 	display: inline-block;
@@ -3514,7 +3525,7 @@ iframe {
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>
+                <data:post.title/>AAA
               </b:if>
             </h3>
           </div>
@@ -4167,7 +4178,7 @@ iframe {
                   </div>
                 </a>
               <b:else/>
-                <data:post.title/>
+                <data:post.title/>BBB
               </b:if>
             </h3>
           </div>
@@ -4596,6 +4607,7 @@ iframe {
         </b:includable>
                     <b:includable id='postTitle' var='post'>
           <!-- Snippetize the post title -->
+          <!-- post Title in show  -->
           <div class='post-title-container'>
             <a expr:name='data:post.id'/>
             <h3 class='post-title entry-title'>
@@ -4613,6 +4625,11 @@ iframe {
               <b:else/>
                 <data:post.title/>
               </b:if>
+              <div class='post-meta'>
+                <span class='post-author'><i class="fas fa-camera"></i> <data:post.author.name/></span>
+                <span class='post-date published' expr:datetime='data:post.date.iso8601'><i class="fas fa-camera"></i> <data:post.date/></span>
+                <span class='post-date published'><data:post.date/></span>
+              </div>
             </h3>
           </div>
         </b:includable>
