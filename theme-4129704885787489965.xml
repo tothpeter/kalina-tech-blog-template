@@ -3268,10 +3268,6 @@ iframe {
 	background-color: #888
 }
 
-.social-color .external-link a {
-	background-color: $(main.dark.color)
-}
-
 .social-text .facebook a:after {
 	content: "Facebook"
 }
