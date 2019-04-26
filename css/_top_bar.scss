@@ -1,0 +1,83 @@
+/* Top Bar CSS */
+
+#top-bar {
+	width: 100%;
+	background-color: #222;
+	overflow: hidden;
+	margin: 0
+}
+
+#top-bar.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 8;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 425px) {
+	#top-bar {
+		display: none
+	}
+}
+
+@media screen and (min-width: 426px) {
+  .item-view .page_body {
+    padding-top: 103px;
+  }
+
+  .centered-top-container.sticky {
+    top: 34px;
+  }
+
+  .centered-top-container.sticky.animating {
+    top: 0;
+  }
+}
+
+.top-bar-nav {
+	position: relative;
+	float: left;
+	display: block
+}
+
+.top-bar-nav .widget>.widget-title {
+	display: none
+}
+
+#top-bar .top-bar-nav ul {
+  margin: 0 0 0 -10px;
+  padding: 0;
+}
+
+#top-bar li {
+	float: left;
+  list-style: none;
+}
+
+#top-bar a {
+	height: 34px;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 34px;
+	padding: 0 10px;
+}
+
+#top-bar a:hover {
+  background: linear-gradient(180deg, rgba(34,34,34,1) 20%, rgba(0,85,102,1) 100%);
+}
+
+#top-bar .top-bar-social ul {
+  margin: 0 -10px 0 0;
+  padding: 0;
+}
+
+#top-bar .top-bar-social {
+	position: relative;
+	float: right;
+	display: block
+}
