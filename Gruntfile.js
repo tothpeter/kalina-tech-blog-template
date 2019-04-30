@@ -20,6 +20,7 @@ module.exports = function(grunt) {
         dest: 'theme-final.xml',
         options: {
           sections: {
+            normalize: 'css/normalize.css',
             default_styles: 'css/default_template.css',
             styles: 'tmp/styles.css',
             variables: 'theme/variables.xml'
