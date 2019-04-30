@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         dest: 'theme-final.xml',
         options: {
           sections: {
-            styles: 'tmp/styles.css'
+            styles: 'tmp/styles.css',
+            variables: 'theme/variables.xml'
           }
         }
       }
