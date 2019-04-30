@@ -6,6 +6,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+bash+rub
  * @author Rose Pritchard
  */
 
+pre>code {
+  display: block;
+  padding: .5em;
+  -webkit-text-size-adjust: none;
+  overflow-x: auto;
+  white-space: pre;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
