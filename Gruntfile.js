@@ -21,6 +21,7 @@ module.exports = function(grunt) {
         options: {
           sections: {
             normalize: 'css/normalize.css',
+            default_template_skin: 'css/default_template_skin.css',
             default_styles: 'css/default_template.css',
             styles: 'tmp/styles.css',
             variables: 'theme/variables.xml'
