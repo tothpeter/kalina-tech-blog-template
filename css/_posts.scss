@@ -1,0 +1,25 @@
+/* General */
+.post-header {
+  .post-meta {
+    color: $posts-byline-color;
+    font-size: 12px;
+    font-weight: 400;
+
+    .post-author,
+		.post-date {
+    	margin: 0 10px 0 0;
+		}
+	}
+}
+
+/* On landing page */
+.item-view {
+	.post-title {
+		margin-bottom: 10px;
+	}
+
+	.post-meta {
+		padding: 0 1px 6px;
+	  border-bottom: 1px solid #eaeaea;
+	}
+}
