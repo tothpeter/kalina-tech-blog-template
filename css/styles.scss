@@ -35,3 +35,11 @@ iframe {
     max-width:90%
   }
 }
+
+code {
+  padding: 2px 4px;
+
+  &.prism {
+    padding: unset;
+  }
+}

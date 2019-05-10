@@ -3426,6 +3426,12 @@ iframe {
     max-width: 90%;
   }
 }
+code {
+  padding: 2px 4px;
+}
+code.prism {
+  padding: unset;
+}
 
         /* Own Styles Ends */
       ]]>
