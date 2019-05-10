@@ -131,6 +131,7 @@
           </b:if>
           <b:include data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
         </b:includable>
+        <!-- Display Place Unknown -->
         <b:includable id='postTitle' var='post'>
           <!-- Snippetize the post title -->
           <div class='post-title-container'>
@@ -784,6 +785,7 @@
                     <b:includable id='postShareButtons' var='post'>
           <!-- We call super.postShareButtons from the migrated positions. -->
         </b:includable>
+                    <!-- Featured -->
                     <b:includable id='postTitle' var='post'>
           <!-- Snippetize the post title -->
           <div class='post-title-container'>
@@ -804,6 +806,14 @@
                 <data:post.title/>
               </b:if>
             </h3>
+          </div>
+        </b:includable>
+        <b:includable id='postTimestamp'>
+          <div class='post-meta'>
+            <i class="fa fa-user-o"></i>
+            <span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
+            <i class="fa fa-clock-o"></i>
+            <time class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></time>
           </div>
         </b:includable>
                     <b:includable id='postWrapperClasses'>

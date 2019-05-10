@@ -16,14 +16,28 @@
 	}
 }
 
-/* On landing page */
+/* On show page */
 .item-view {
 	.post-title {
 		margin-bottom: 10px;
 	}
 
-	.post-meta {
+	.post-header .post-meta {
 		padding: 0 1px 6px;
 	  border-bottom: 1px solid #eaeaea;
+	}
+}
+
+/* On landing page */
+/* Featured */
+.post-wrapper.hero {
+  .post-header {
+    padding-top: 8px;
+  }
+}
+
+.feed-view {
+  .post-header .post-meta {
+    font-size: 13px;
 	}
 }
