@@ -2,6 +2,7 @@
 
 ## Prerequisites
 * [Node.js](http://nodejs.org/) (with NPM)
+  * `brew install node` on a mac
 
 ## Installation for development
 * `npm install`
