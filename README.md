@@ -7,6 +7,7 @@
 ## Installation for development
 * `npm install`
 * `gem install sass`
+* Might need: `npm install -g grunt-cli`
 
 ## Autogenerate files while developing
 * `grunt watch`
