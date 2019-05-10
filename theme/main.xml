@@ -10,10 +10,10 @@
 
     <b:skin version='1.3.0'>
       <![CDATA[
-        <!-- normalize Styles Starts -->
+        /* normalize Styles Starts */
         <!-- build:section normalize -->
         <!-- /build -->
-        <!-- normalize Styles Ends -->
+        /* normalize Styles Ends */
 
         /*
         <!-- Variable definition starts -->
@@ -22,15 +22,15 @@
         <!-- Variable definition ends -->
         */
 
-        <!-- Default Template Styles Starts -->
+        /* Default Template Styles Starts */
         <!-- build:section default_styles -->
         <!-- /build -->
-        <!-- Default Template Styles Ends -->
+        /* Default Template Styles Ends */
 
-        <!-- Own Styles Starts -->
+        /* Own Styles Starts */
         <!-- build:section styles -->
         <!-- /build -->
-        <!-- Own Styles Ends -->
+        /* Own Styles Ends */
       ]]>
     </b:skin>
 
