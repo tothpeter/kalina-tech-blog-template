@@ -5,6 +5,10 @@
     font-size: 12px;
     font-weight: 400;
 
+    a {
+      color: $posts-byline-color;
+    }
+
     .post-author,
 		.post-date {
     	margin: 0 10px 0 0;
