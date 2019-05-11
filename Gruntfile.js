@@ -19,12 +19,22 @@ module.exports = function(grunt) {
         src: 'theme/main.xml',
         dest: 'theme-final.xml',
         options: {
+          // beautify: true,
           sections: {
             normalize: 'css/normalize.css',
             default_template_skin: 'css/default_template_skin.css',
             default_styles: 'css/default_template.css',
             styles: 'tmp/styles.css',
-            variables: 'theme/variables.xml'
+            variables: 'theme/variables.xml',
+
+            section: {
+              featured_post: 'theme/sections/featured-post.xml',
+              top_bar: {
+                main: 'theme/sections/top_bar/main.xml',
+                nav: 'theme/sections/top_bar/nav.xml',
+                social: 'theme/sections/top_bar/social.xml',
+              }
+            }
           }
         }
       }

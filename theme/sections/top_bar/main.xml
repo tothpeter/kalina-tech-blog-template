@@ -1,0 +1,12 @@
+<!-- top bar starts -->
+<div id='top-bar'>
+  <b:class cond='data:view.isSingleItem' name='sticky'/>
+  <div class='centered'>
+    <!-- build:section section.top_bar.nav -->
+    <!-- /build -->
+
+    <!-- build:section section.top_bar.social -->
+    <!-- /build -->
+  </div>
+</div>
+<!-- top bar ends -->

@@ -1,0 +1,30 @@
+<!-- Top Social -->
+<b:section class='top-bar-social social' id='top-bar-social' maxwidgets='1' name='Social Top' showaddelement='yes'>
+  <b:widget id='LinkList73' locked='true' title='' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='link-3'>https://stackoverflow.com/users/3941583/p%C3%A9ter-t%C3%B3th-toma</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='link-4'>https://www.linkedin.com/in/tothpeter08/</b:widget-setting>
+      <b:widget-setting name='text-1'>instagram</b:widget-setting>
+      <b:widget-setting name='link-1'>https://www.instagram.com/tomaaa08/</b:widget-setting>
+      <b:widget-setting name='text-0'>twitter</b:widget-setting>
+      <b:widget-setting name='link-2'>https://github.com/tothpeter</b:widget-setting>
+      <b:widget-setting name='text-3'>stack-overflow</b:widget-setting>
+      <b:widget-setting name='link-0'>https://twitter.com/tomaaa08</b:widget-setting>
+      <b:widget-setting name='text-2'>github</b:widget-setting>
+      <b:widget-setting name='text-4'>linkedin</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <b:include name='content'/>
+    </b:includable>
+    <b:includable id='content'>
+      <div class='widget-content'>
+        <ul>
+          <b:loop values='data:links' var='link'>
+            <li expr:class='data:link.name'><a expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+          </b:loop>
+        </ul>
+      </div>
+    </b:includable>
+  </b:widget>
+</b:section>

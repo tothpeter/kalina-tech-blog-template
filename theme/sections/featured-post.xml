@@ -1,0 +1,145 @@
+<b:section class='featured-post' id='featured_post' name='Featured Post' showaddelement='false'>
+  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='' type='FeaturedPost' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='showSnippet'>false</b:widget-setting>
+      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+      <!-- Prod -->
+      <!-- <b:widget-setting name='postId'>5754944957262589530</b:widget-setting> -->
+      <!-- Stg -->
+      <b:widget-setting name='postId'>7006128772644136128</b:widget-setting>
+      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<b:include name='snippetedPosts'/>
+</div>
+</b:includable>
+    <b:includable id='commentsLink'>
+<a class='comment-link' expr:href='data:post.commentsUrl ?: data:post.url' expr:onclick='data:post.commentsUrlOnclick'>
+<b:include name='commentIcon'/>
+<span class='num_comments'>
+<data:post.numberOfComments/>
+</span>
+</a>
+</b:includable>
+    <b:includable id='footerBylines'>
+<!-- Set the calling parent element to be a container. -->
+<b:class name='container'/>
+
+<b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
+<b:include name='super.footerBylines'/>
+<b:else/>
+<b:include data='{ items: [[&quot;comments&quot;]] }' name='footerBylinesOverride'/>
+</b:if>
+<b:include data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
+</b:includable>
+    <b:includable id='headerByline'>
+<b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
+<b:include name='super.headerByline'/>
+<b:else/>
+<b:include data='{ items: [&quot;author&quot;, &quot;timestamp&quot;, &quot;labels&quot;] }' name='headerBylineOverride'/>
+</b:if>
+<b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-top&quot;, overridden: true }' name='maybeAddShareButtons'/>
+</b:includable>
+    <b:includable id='postLabels'>
+<b:if cond='data:view.isMultipleItems'>
+<div class='labels-outer-container'>
+<div class='labels-container overflowable-container overflowable-no-popup'>
+<div class='labels-items overflowable-contents byline post-labels'>
+  <b:loop index='i' values='data:post.labels' var='label'>
+    <span class='overflowable-item'>
+      <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
+    </span>
+  </b:loop>
+</div>
+<span class='labels-more overflow-button hidden'>
+  <a expr:href='data:post.link ?: data:post.url'>+<span class='overflow-count'/></a>
+</span>
+</div>
+</div>
+<b:else/>
+<b:include name='super.postLabels'/>
+</b:if>
+</b:includable>
+    <b:includable id='postShareButtons' var='post'>
+<!-- We call super.postShareButtons from the migrated positions. -->
+</b:includable>
+    <!-- Featured -->
+    <b:includable id='postTitle' var='post'>
+<!-- Snippetize the post title -->
+<div class='post-title-container'>
+<a expr:name='data:post.id'/>
+<h3 class='post-title entry-title'>
+<b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+<a expr:href='data:post.link ?: data:post.url'>
+  <div class='snippet-container r-snippet-container'>
+    <div class='r-snippetized'>
+      <data:post.title/>
+    </div>
+    <b:if cond='data:post.title != &quot;&quot;'>
+      <div class='snippet-fade r-snippet-fade hidden'/>
+    </b:if>
+  </div>
+</a>
+<b:else/>
+<data:post.title/>
+</b:if>
+</h3>
+</div>
+</b:includable>
+<b:includable id='postTimestamp'>
+<div class='post-meta'>
+<i class="fa fa-user-o"></i>
+<span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
+<i class="fa fa-clock-o"></i>
+<time class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+</div>
+</b:includable>
+    <b:includable id='postWrapperClasses'>
+<b:class cond='data:post.featuredImage' name='image'/>
+<b:class cond='not data:post.featuredImage' name='no-image'/>
+<b:class cond='data:post.labels and not data:post.labels.empty' name='has-labels'/>
+</b:includable>
+    <b:includable id='snippetedPostContent'>
+<b:if cond='data:widget.sectionId != &quot;featured_post&quot;'>
+<b:include name='super.snippetedPostContent'/>
+<b:else/>
+<b:with value='&quot;post-thumb-&quot; + data:post.id' var='thumbClassName'>
+<b:if cond='data:post.featuredImage'>
+<style>
+  @media (min-width: 746px) { .hero .<data:thumbClassName/> {background-image:url(<b:eval expr='resizeImage(data:post.featuredImage, 800, &quot;800:272&quot;).cssEscaped'/>);} }
+  @media (min-width: 1545px) { .hero .<data:thumbClassName/> {background-image:url(<b:eval expr='resizeImage(data:post.featuredImage, 1185, &quot;1185:272&quot;).cssEscaped'/>);} }
+  @media (max-width: 400px) { .hero .<data:thumbClassName/> {background-image:url(<b:eval expr='resizeImage(data:post.featuredImage, 400, &quot;1:1&quot;).cssEscaped'/>); } }
+  @media (min-width: 401px) and (max-width: 745px) { .hero .<data:thumbClassName/> {background-image:url(<b:eval expr='resizeImage(data:post.featuredImage, 745, &quot;745:400&quot;).cssEscaped'/>); } }
+</style>
+</b:if>
+
+<div expr:class='&quot;post-wrapper hero post-&quot; + data:post.id'>
+<b:include name='postWrapperClasses'/>
+<b:include name='feedPostImage'/>
+
+<div class='slide'>
+  <div class='post hentry'>
+    <b:include cond='data:postDisplay.showTitle' data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:include cond='data:postDisplay.showSnippet' data='post' name='postSnippet'/>
+    <div class='post-footer'>
+      <b:include name='footerBylines'/>
+    </div>
+  </div>
+</div>
+</div>
+</b:with>
+</b:if>
+</b:includable>
+    <b:includable id='snippetedPostThumbnail'>
+<div class='item-thumbnail'>
+<a expr:href='data:post.url'>
+<b:include data='{                                  image: data:post.featuredImage,                                  imageSizes: [280,560,840,1120,1400]                                }' name='responsiveImage'/>
+</a>
+</div>
+</b:includable>
+  </b:widget>
+</b:section>
