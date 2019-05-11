@@ -27,6 +27,10 @@ module.exports = function(grunt) {
             styles: 'tmp/styles.css',
             variables: 'theme/variables.xml',
 
+            partial: {
+              post_filter_message: 'theme/partial/post_filter_message.xml',
+            },
+
             section: {
               top_bar: {
                 main: 'theme/sections/top_bar/main.xml',

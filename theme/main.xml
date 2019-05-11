@@ -452,21 +452,8 @@
             <!-- /build -->
 
             <div class='centered-bottom'>
-              <b:if cond='data:view.isArchive or (data:view.isSearch and data:view.search.resultsMessage)'>
-                <div class='post-filter-message'>
-                  <div>
-                    <b:if cond='data:view.isArchive'>
-                      <data:view.archive.rangeMessage/>
-                    <b:elseif cond='data:view.isSearch and data:view.search.resultsMessage'/>
-                      <data:view.search.resultsMessageHtml/>
-                    </b:if>
-                  </div>
-                  <div>
-                    <a expr:href='data:blog.homepageUrl'><data:messages.viewAll/></a>
-                  </div>
-                </div>
-              </b:if>
-
+              <!-- build:section recursive partial.post_filter_message -->
+              <!-- /build -->
 
               <!-- build:section recursive section.main.main -->
               <!-- /build -->
