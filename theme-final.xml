@@ -4821,226 +4821,227 @@ background-repeat: no-repeat;
                   <div class='navigation'>
                     <b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
                   </div>
-                  <b:section class='sidebar' id='sidebar_feed' name='Sidebar' preferred='yes'>
-                    <b:widget id='FollowByEmail2' locked='false' title='Follow by Email' type='FollowByEmail' visible='false'>
-                      <b:includable id='main'>
-                        <b:include name='widget-title'/>
-                        <b:include name='content'/>
-                      </b:includable>
-                      <b:includable id='content'>
-                        <div class='widget-content'>
-                          <div class='follow-by-email-inner'>
-                            <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-                              <input autocomplete='off' class='follow-by-email-address' expr:placeholder='data:messages.emailAddress' name='email' type='email'/>
-                              <input class='follow-by-email-submit' expr:value='data:messages.getEmailNotifications' type='submit'/>
-                              <input expr:value='data:feedPath' name='uri' type='hidden'/>
-                              <input name='loc' type='hidden' value='en_US'/>
-                            </form>
-                          </div>
-                        </div>
-                      </b:includable>
-                    </b:widget>
-                    <b:widget id='Profile1' locked='false' title='About Me' type='Profile' visible='true'>
-                      <b:widget-settings>
-                        <b:widget-setting name='showaboutme'>true</b:widget-setting>
-                        <b:widget-setting name='showlocation'>false</b:widget-setting>
-                      </b:widget-settings>
-                      <b:includable id='main'>
-          <b:include name='content'/>
-        </b:includable>
-                      <b:includable id='authorProfileImage'>
-  <img class='profile-img' expr:alt='data:messages.myPhoto' expr:height='data:authorPhoto.height' expr:src='data:authorPhoto.image' expr:width='data:authorPhoto.width'/>
-</b:includable>
-                      <b:includable id='content'>
-  <b:if cond='data:team'>
-    <div class='widget-content team'>
-      <b:include name='teamProfile'/>
-    </div>
-  <b:else/>
-    <div class='widget-content individual'>
-      <b:include name='userProfile'/>
-    </div>
-  </b:if>
-</b:includable>
-                      <b:includable id='defaultProfileImage'>
-          <div class='default-avatar-wrapper'>
-            <b:include data='{ iconClass: &quot;avatar-icon&quot; }' name='defaultAvatarIcon'/>
-          </div>
-        </b:includable>
-                      <b:includable id='profileImage'>
-  <b:if cond='data:authorPhoto.image'>
-    <b:include name='authorProfileImage'/>
-  <b:else/>
-    <b:include name='defaultProfileImage'/>
-  </b:if>
-</b:includable>
-                      <b:includable id='teamProfile'>
-          <div class='extendable'>
-            <b:include data='{                                 items: data:authors,                                 itemSet: &quot;authors&quot;,                                 itemsMarkup: &quot;super.teamProfile&quot;,                                 limit: 4                               }' name='extendableItems'/>
-          </div>
-        </b:includable>
-                      <b:includable id='teamProfileLink'>
-          <!-- Add an extra 'Visit profile' link -->
-          <a class='profile-link g-profile' expr:href='data:author.userUrl'>
-            <b:include name='profileImage'/>
-            <div class='profile-name-container'>
-              <span class='profile-name'><data:author.display-name/></span>
-              <data:messages.visitProfile/>
-            </div>
-          </a>
-        </b:includable>
-                      <b:includable id='userGoogleProfile'>
-  <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
-</b:includable>
-                      <b:includable id='userLocation'>
-  <dd class='profile-data location'><data:location/></dd>
-</b:includable>
-                      <b:includable id='userProfile'>
-  <b:include name='userProfileImage'/>
-  <b:include name='userProfileInfo'/>
-</b:includable>
-                      <b:includable id='userProfileData'>
-  <dt class='profile-data'>
-    <b:include name='userProfileLink'/>
-    <b:include cond='data:hasgoogleprofile' name='userGoogleProfile'/>
-  </dt>
-</b:includable>
-                      <b:includable id='userProfileImage'>
-  <a expr:href='data:userUrl' rel='nofollow'>
-    <b:include name='profileImage'/>
-  </a>
-</b:includable>
-                      <b:includable id='userProfileInfo'>
-  <div class='profile-info'>
-    <dl class='profile-datablock'>
-      <b:class cond='data:showlocation and data:location != &quot;&quot;' name='has-location'/>
-
-      <b:include name='userProfileData'/>
-      <b:include cond='data:showlocation and data:location != &quot;&quot;' name='userLocation'/>
-      <b:include cond='data:aboutme != &quot;&quot;' name='userProfileText'/>
-    </dl>
-    <b:include name='viewProfileLink'/>
-  </div>
-</b:includable>
-                      <b:includable id='userProfileLink'>
-  <a class='profile-link g-profile' expr:href='data:userUrl' rel='author nofollow'>
-    <data:displayname/>
-  </a>
-</b:includable>
-                      <b:includable id='userProfileText'>
-  <dd class='profile-textblock'>
-    <data:aboutme/>
-  </dd>
-</b:includable>
-                      <b:includable id='viewProfileLink'>
-          <!-- Change single profile link message to 'Visit profile' -->
-          <a class='profile-link' expr:href='data:userUrl' rel='author'><data:messages.visitProfile/></a>
-        </b:includable>
-                    </b:widget>
-                    <b:widget id='BlogArchive1' locked='false' title='' type='BlogArchive' visible='true'>
-                      <b:widget-settings>
-                        <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
-                        <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-                        <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-                        <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-                        <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-                        <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-                        <b:widget-setting name='chronological'>false</b:widget-setting>
-                        <b:widget-setting name='showPosts'>true</b:widget-setting>
-                        <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-                      </b:widget-settings>
-                      <b:includable id='main' var='this'>
-          <details class='collapsible extendable'>
-            <b:attr cond='data:view.isArchive' name='open' value='open'/>
-            <b:with value='true' var='renderAsDetails'>
-            <b:with value='data:messages.archive' var='defaultTitle'>
-              <b:include name='super.main'/>
-            </b:with>
-            </b:with>
-          </details>
-        </b:includable>
-                      <b:includable id='content'>
-  <div class='widget-content'>
-    <div id='ArchiveList'>
-      <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-        <b:include cond='data:this.style == &quot;HIERARCHY&quot;' name='hierarchy'/>
-        <b:include cond='data:this.style in {&quot;FLAT&quot;, &quot;MENU&quot;}' name='flat'/>
+<b:section class='sidebar' id='sidebar_feed' name='Sidebar' preferred='yes'>
+  <b:widget id='FollowByEmail2' locked='false' title='Follow by Email' type='FollowByEmail' visible='false'>
+    <b:includable id='main'>
+      <b:include name='widget-title'/>
+      <b:include name='content'/>
+    </b:includable>
+    <b:includable id='content'>
+      <div class='widget-content'>
+        <div class='follow-by-email-inner'>
+          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+            <input autocomplete='off' class='follow-by-email-address' expr:placeholder='data:messages.emailAddress' name='email' type='email'/>
+            <input class='follow-by-email-submit' expr:value='data:messages.getEmailNotifications' type='submit'/>
+            <input expr:value='data:feedPath' name='uri' type='hidden'/>
+            <input name='loc' type='hidden' value='en_US'/>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
+    </b:includable>
+  </b:widget>
+  <b:widget id='Profile1' locked='false' title='About Me' type='Profile' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='showaboutme'>true</b:widget-setting>
+      <b:widget-setting name='showlocation'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:include name='content'/>
 </b:includable>
-                      <b:includable id='flat'>
-          <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.flat&quot;                             }' name='extendableItems'/>
-        </b:includable>
-                      <b:includable id='hierarchy'>
-          <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               limit: 1,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.hierarchy&quot;                             }' name='extendableItems'/>
-        </b:includable>
-                      <b:includable id='interval' var='intervals'>
-  <ul class='hierarchy'>
-    <b:loop values='data:intervals' var='interval'>
-      <li class='archivedate'>
-        <div class='hierarchy-title'>
-          <a class='post-count-link' expr:href='data:interval.url'>
-            <data:interval.name/>
-            <span class='post-count'><data:interval.post-count/></span>
-          </a>
-        </div>
-        <div class='hierarchy-content'>
-          <b:include cond='data:interval.data' data='interval.data' name='interval'/>
-          <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
-        </div>
-      </li>
-    </b:loop>
-  </ul>
+    <b:includable id='authorProfileImage'>
+<img class='profile-img' expr:alt='data:messages.myPhoto' expr:height='data:authorPhoto.height' expr:src='data:authorPhoto.image' expr:width='data:authorPhoto.width'/>
 </b:includable>
-                      <b:includable id='posts' var='posts'>
-  <ul class='posts hierarchy'>
-    <b:loop values='data:posts' var='post'>
-      <li>
-        <a expr:href='data:post.url'><data:post.title/></a>
-      </li>
-    </b:loop>
-  </ul>
+    <b:includable id='content'>
+<b:if cond='data:team'>
+<div class='widget-content team'>
+<b:include name='teamProfile'/>
+</div>
+<b:else/>
+<div class='widget-content individual'>
+<b:include name='userProfile'/>
+</div>
+</b:if>
 </b:includable>
-                    </b:widget>
-                    <b:widget id='Label1' locked='false' title='Labels' type='Label' visible='true'>
-                      <b:widget-settings>
-                        <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-                        <b:widget-setting name='display'>LIST</b:widget-setting>
-                        <b:widget-setting name='selectedLabelsList'>Business,Music,Sports,Technology</b:widget-setting>
-                        <b:widget-setting name='showType'>ALL</b:widget-setting>
-                        <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-                      </b:widget-settings>
-                      <b:includable id='main' var='this'>
-          <details class='collapsible extendable'>
-            <b:attr cond='data:view.isLabelSearch' name='open' value='open'/>
-            <b:with value='true' var='renderAsDetails'>
-            <b:with value='data:messages.labels' var='defaultTitle'>
-              <b:include name='super.main'/>
-            </b:with>
-            </b:with>
-          </details>
-        </b:includable>
-                      <b:includable id='cloud'>
-          <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.cloud&quot;                             }' name='extendableItems'/>
-        </b:includable>
-                      <b:includable id='content'>
-  <div class='widget-content'>
-    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
-    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
-    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
-  </div>
+    <b:includable id='defaultProfileImage'>
+<div class='default-avatar-wrapper'>
+<b:include data='{ iconClass: &quot;avatar-icon&quot; }' name='defaultAvatarIcon'/>
+</div>
 </b:includable>
-                      <b:includable id='list'>
-          <b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.list&quot;                             }' name='extendableItems'/>
-        </b:includable>
-                    </b:widget>
-                    <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='false'>
-                      <b:includable id='main'>
-  <b:include name='reportAbuse'/>
+    <b:includable id='profileImage'>
+<b:if cond='data:authorPhoto.image'>
+<b:include name='authorProfileImage'/>
+<b:else/>
+<b:include name='defaultProfileImage'/>
+</b:if>
 </b:includable>
-                    </b:widget>
-                  </b:section>
+    <b:includable id='teamProfile'>
+<div class='extendable'>
+<b:include data='{                                 items: data:authors,                                 itemSet: &quot;authors&quot;,                                 itemsMarkup: &quot;super.teamProfile&quot;,                                 limit: 4                               }' name='extendableItems'/>
+</div>
+</b:includable>
+    <b:includable id='teamProfileLink'>
+<!-- Add an extra 'Visit profile' link -->
+<a class='profile-link g-profile' expr:href='data:author.userUrl'>
+<b:include name='profileImage'/>
+<div class='profile-name-container'>
+<span class='profile-name'><data:author.display-name/></span>
+<data:messages.visitProfile/>
+</div>
+</a>
+</b:includable>
+    <b:includable id='userGoogleProfile'>
+<div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
+</b:includable>
+    <b:includable id='userLocation'>
+<dd class='profile-data location'><data:location/></dd>
+</b:includable>
+    <b:includable id='userProfile'>
+<b:include name='userProfileImage'/>
+<b:include name='userProfileInfo'/>
+</b:includable>
+    <b:includable id='userProfileData'>
+<dt class='profile-data'>
+<b:include name='userProfileLink'/>
+<b:include cond='data:hasgoogleprofile' name='userGoogleProfile'/>
+</dt>
+</b:includable>
+    <b:includable id='userProfileImage'>
+<a expr:href='data:userUrl' rel='nofollow'>
+<b:include name='profileImage'/>
+</a>
+</b:includable>
+    <b:includable id='userProfileInfo'>
+<div class='profile-info'>
+<dl class='profile-datablock'>
+<b:class cond='data:showlocation and data:location != &quot;&quot;' name='has-location'/>
+
+<b:include name='userProfileData'/>
+<b:include cond='data:showlocation and data:location != &quot;&quot;' name='userLocation'/>
+<b:include cond='data:aboutme != &quot;&quot;' name='userProfileText'/>
+</dl>
+<b:include name='viewProfileLink'/>
+</div>
+</b:includable>
+    <b:includable id='userProfileLink'>
+<a class='profile-link g-profile' expr:href='data:userUrl' rel='author nofollow'>
+<data:displayname/>
+</a>
+</b:includable>
+    <b:includable id='userProfileText'>
+<dd class='profile-textblock'>
+<data:aboutme/>
+</dd>
+</b:includable>
+    <b:includable id='viewProfileLink'>
+<!-- Change single profile link message to 'Visit profile' -->
+<a class='profile-link' expr:href='data:userUrl' rel='author'><data:messages.visitProfile/></a>
+</b:includable>
+  </b:widget>
+  <b:widget id='BlogArchive1' locked='false' title='' type='BlogArchive' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>true</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+<details class='collapsible extendable'>
+<b:attr cond='data:view.isArchive' name='open' value='open'/>
+<b:with value='true' var='renderAsDetails'>
+<b:with value='data:messages.archive' var='defaultTitle'>
+<b:include name='super.main'/>
+</b:with>
+</b:with>
+</details>
+</b:includable>
+    <b:includable id='content'>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+<b:include cond='data:this.style == &quot;HIERARCHY&quot;' name='hierarchy'/>
+<b:include cond='data:this.style in {&quot;FLAT&quot;, &quot;MENU&quot;}' name='flat'/>
+</div>
+</div>
+</div>
+</b:includable>
+    <b:includable id='flat'>
+<b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.flat&quot;                             }' name='extendableItems'/>
+</b:includable>
+    <b:includable id='hierarchy'>
+<b:include data='{                               buttonClass: &quot;flat-button&quot;,                               limit: 1,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.hierarchy&quot;                             }' name='extendableItems'/>
+</b:includable>
+    <b:includable id='interval' var='intervals'>
+<ul class='hierarchy'>
+<b:loop values='data:intervals' var='interval'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' expr:href='data:interval.url'>
+<data:interval.name/>
+<span class='post-count'><data:interval.post-count/></span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<b:include cond='data:interval.data' data='interval.data' name='interval'/>
+<b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+</div>
+</li>
+</b:loop>
+</ul>
+</b:includable>
+    <b:includable id='posts' var='posts'>
+<ul class='posts hierarchy'>
+<b:loop values='data:posts' var='post'>
+<li>
+<a expr:href='data:post.url'><data:post.title/></a>
+</li>
+</b:loop>
+</ul>
+</b:includable>
+  </b:widget>
+  <b:widget id='Label1' locked='false' title='Labels' type='Label' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'>Business,Music,Sports,Technology</b:widget-setting>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='this'>
+<details class='collapsible extendable'>
+<b:attr cond='data:view.isLabelSearch' name='open' value='open'/>
+<b:with value='true' var='renderAsDetails'>
+<b:with value='data:messages.labels' var='defaultTitle'>
+<b:include name='super.main'/>
+</b:with>
+</b:with>
+</details>
+</b:includable>
+    <b:includable id='cloud'>
+<b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.cloud&quot;                             }' name='extendableItems'/>
+</b:includable>
+    <b:includable id='content'>
+<div class='widget-content'>
+<b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
+<b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+<b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+</div>
+</b:includable>
+    <b:includable id='list'>
+<b:include data='{                               buttonClass: &quot;flat-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.list&quot;                             }' name='extendableItems'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='false'>
+    <b:includable id='main'>
+<b:include name='reportAbuse'/>
+</b:includable>
+  </b:widget>
+</b:section>
+
                 </b:if>
                 <b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
                   <b:section id='sidebar_item' name='Sidebar (Item Page)'>
