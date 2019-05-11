@@ -4811,13 +4811,13 @@ blogger.widgets.blog.initThreadedComments(
 </b:section>
 
 
-              <aside class='sidebar-container container' role='complementary'>
-                <b:class cond='not data:view.isSingleItem' name='sidebar-invisible'/>
-                <b:if cond='not data:view.isSingleItem or data:view.isLayoutMode'>
-                  <!-- Display different sidebars for feed page / item page. -->
-                  <div class='navigation'>
-                    <b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
-                  </div>
+<aside class='sidebar-container container' role='complementary'>
+  <b:class cond='not data:view.isSingleItem' name='sidebar-invisible'/>
+  <b:if cond='not data:view.isSingleItem or data:view.isLayoutMode'>
+    <!-- Display different sidebars for feed page / item page. -->
+    <div class='navigation'>
+      <b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
+    </div>
 <b:section class='sidebar' id='sidebar_feed' name='Sidebar' preferred='yes'>
   <b:widget id='FollowByEmail2' locked='false' title='Follow by Email' type='FollowByEmail' visible='false'>
     <b:includable id='main'>
@@ -5039,8 +5039,8 @@ blogger.widgets.blog.initThreadedComments(
   </b:widget>
 </b:section>
 
-                </b:if>
-                <b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
+  </b:if>
+  <b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
 <b:section id='sidebar_item' name='Sidebar (Item Page)'>
   <b:widget cond='data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='Popular Posts' type='PopularPosts' visible='true'>
     <b:widget-settings>
@@ -5086,8 +5086,9 @@ blogger.widgets.blog.initThreadedComments(
   </b:widget>
 </b:section>
 
-                </b:if>
-              </aside>   <!-- close sidebar-container -->
+  </b:if>
+</aside>   <!-- close sidebar-container -->
+
             </div>  <!-- close centered-bottom -->
           </div>  <!-- close centered -->
         </div>  <!-- close page_body -->

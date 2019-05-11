@@ -40,8 +40,13 @@ module.exports = function(grunt) {
               page_list_top: 'theme/sections/page_list_top.xml',
               subscription: 'theme/sections/subscription.xml',
               vertical_ad_container: 'theme/sections/vertical_ad_container.xml',
-              sidebar_feed: 'theme/sections/sidebar_feed.xml',
-              sidebar_item: 'theme/sections/sidebar_item.xml',
+
+              sidebar: {
+                feed: 'theme/sections/sidebar/feed.xml',
+                item: 'theme/sections/sidebar/item.xml',
+                main: 'theme/sections/sidebar/main.xml'
+              },
+
               main: 'theme/sections/main.xml',
               footer: 'theme/sections/footer.xml',
             }
