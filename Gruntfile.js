@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 
             section: {
               header: 'theme/sections/header.xml',
+              search_top: 'theme/sections/search_top.xml',
               featured_post: 'theme/sections/featured-post.xml',
               top_bar: {
                 main: 'theme/sections/top_bar/main.xml',
