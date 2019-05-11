@@ -35,7 +35,9 @@ module.exports = function(grunt) {
               },
               header: 'theme/sections/header.xml',
               search_top: 'theme/sections/search_top.xml',
-              featured_post: 'theme/sections/featured_post.xml'
+              featured_post: 'theme/sections/featured_post.xml',
+              // Display place is unknown
+              page_list_top: 'theme/sections/page_list_top.xml'
             }
           }
         }
