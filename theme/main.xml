@@ -719,13 +719,13 @@
                 </b:if>
 
                 <b:section class='featured-post' id='featured_post' name='Featured Post' showaddelement='false'>
-                  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='Featured Post' type='FeaturedPost' visible='true'>
+                  <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='' type='FeaturedPost' version='2' visible='true'>
                     <b:widget-settings>
                       <b:widget-setting name='showSnippet'>false</b:widget-setting>
                       <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-                      <b:widget-setting name='postId'>8341940739574751850</b:widget-setting>
+                      <b:widget-setting name='postId'>5754944957262589530</b:widget-setting>
                       <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-                      <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
+                      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
   <b:include name='widget-title'/>
