@@ -3918,22 +3918,23 @@ body#layout .search {
             <b:if cond='not data:view.isSingleItem'>
               <div class='centered-top-placeholder'/>
             </b:if>
-            <header class='centered-top-container' role='banner'>
-              <b:class cond='data:view.isSingleItem' name='sticky'/>
-              <div class='centered-top'>
-                <b:class cond='data:view.isSearch and data:view.search.query' name='search-focused'/>
 
-                <b:if cond='data:view.isSingleItem'>
-                  <a class='return_link' expr:href='data:blog.homepageUrl'>
-                    <b:include data='{ iconClass: &quot;touch-icon back-button rtl-reversible-icon&quot; }' name='backArrowIcon'/>
-                  </a>
-                <b:else/>
-                  <div class='hamburger-section'>
-                    <b:include data='{ iconClass: &quot;touch-icon hamburger-menu&quot; }' name='menuIcon'/>
-                  </div>
-                </b:if>
+<header class='centered-top-container' role='banner'>
+  <b:class cond='data:view.isSingleItem' name='sticky'/>
+  <div class='centered-top'>
+    <b:class cond='data:view.isSearch and data:view.search.query' name='search-focused'/>
 
-                <div class='blog-name'>
+    <b:if cond='data:view.isSingleItem'>
+      <a class='return_link' expr:href='data:blog.homepageUrl'>
+        <b:include data='{ iconClass: &quot;touch-icon back-button rtl-reversible-icon&quot; }' name='backArrowIcon'/>
+      </a>
+    <b:else/>
+      <div class='hamburger-section'>
+        <b:include data='{ iconClass: &quot;touch-icon hamburger-menu&quot; }' name='menuIcon'/>
+      </div>
+    </b:if>
+
+    <div class='blog-name'>
 <b:section id='header' name='Header' showaddelement='false'>
   <b:widget id='Header1' locked='true' title='Kalina Tech (Header)' type='Header' visible='true'>
     <b:widget-settings>
@@ -3982,15 +3983,15 @@ background-repeat: no-repeat;
   </b:widget>
 </b:section>
 
-                </div>
+    </div>
 
-                <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>
-                  <div class='search'>
-                    <b:class cond='data:view.isSearch and data:view.search.query' name='focused'/>
-                    <button class='search-expand touch-icon-button' expr:aria-label='data:messages.search.escaped'>
-                      <div class='search-expand-text'><data:messages.search/></div>
-                      <b:include data='{ iconClass: &quot;touch-icon search-expand-icon&quot; }' name='searchIcon'/>
-                    </button>
+    <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>
+      <div class='search'>
+        <b:class cond='data:view.isSearch and data:view.search.query' name='focused'/>
+        <button class='search-expand touch-icon-button' expr:aria-label='data:messages.search.escaped'>
+          <div class='search-expand-text'><data:messages.search/></div>
+          <b:include data='{ iconClass: &quot;touch-icon search-expand-icon&quot; }' name='searchIcon'/>
+        </button>
 <b:section id='search_top' name='Search (Top)' showaddelement='false'>
   <b:widget id='BlogSearch1' locked='true' title='Search This Blog' type='BlogSearch' visible='true'>
     <b:includable id='main'>
@@ -4025,16 +4026,16 @@ background-repeat: no-repeat;
   </b:widget>
 </b:section>
 
-                  </div>
-                </b:if>
+      </div>
+    </b:if>
 
-                <b:if cond='data:view.isLayoutMode                             or data:widgets any (w =&gt; w.sectionId == &quot;subscription&quot;)'>
-                  <section class='subscribe-section-container'>
-                    <button class='subscribe-button'><b:eval expr='data:messages.subscribe'/></button>
-                    <div class='subscribe-popup-container'>
-                      <div aria-labelledby='subscribe-title' class='subscribe-popup dialog hidden' role='dialog' tabindex='-1'>
-                        <div role='document'>
-                          <h3 class='subscribe-title' id='subscribe-title'><b:eval expr='data:messages.subscribeToThisBlog'/></h3>
+    <b:if cond='data:view.isLayoutMode                             or data:widgets any (w =&gt; w.sectionId == &quot;subscription&quot;)'>
+      <section class='subscribe-section-container'>
+        <button class='subscribe-button'><b:eval expr='data:messages.subscribe'/></button>
+        <div class='subscribe-popup-container'>
+          <div aria-labelledby='subscribe-title' class='subscribe-popup dialog hidden' role='dialog' tabindex='-1'>
+            <div role='document'>
+              <h3 class='subscribe-title' id='subscribe-title'><b:eval expr='data:messages.subscribeToThisBlog'/></h3>
 <b:section id='subscription' name='Subscription' showaddelement='false'>
   <b:widget id='FollowByEmail1' locked='true' title='Follow by Email' type='FollowByEmail' visible='false'>
     <b:includable id='main'>
@@ -4056,14 +4057,14 @@ background-repeat: no-repeat;
   </b:widget>
 </b:section>
 
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </b:if>
+            </div>
+          </div>
+        </div>
+      </section>
+    </b:if>
 
-                <b:if cond='data:view.isLayoutMode or not data:view.isSingleItem'>
-                  <nav class='top-nav' role='navigation'>
+    <b:if cond='data:view.isLayoutMode or not data:view.isSingleItem'>
+      <nav class='top-nav' role='navigation'>
 <b:section id='page_list_top' name='Page List (Top)' showaddelement='false'>
   <b:widget id='PageList1' locked='true' title='' type='PageList' visible='false'>
     <b:widget-settings>
@@ -4118,11 +4119,13 @@ background-repeat: no-repeat;
   </b:widget>
 </b:section>
 
-                  </nav>
-                </b:if>
-              </div>
+      </nav>
+    </b:if>
+  </div>
 
-            </header>
+</header>
+
+
             <div class='centered-bottom'>
               <b:if cond='data:view.isArchive or (data:view.isSearch and data:view.search.resultsMessage)'>
                 <div class='post-filter-message'>

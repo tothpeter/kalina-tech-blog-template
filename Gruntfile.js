@@ -33,12 +33,16 @@ module.exports = function(grunt) {
                 nav: 'theme/sections/top_bar/nav.xml',
                 social: 'theme/sections/top_bar/social.xml',
               },
-              header: 'theme/sections/header.xml',
-              search_top: 'theme/sections/search_top.xml',
 
-              // Display place is unknown
-              page_list_top: 'theme/sections/page_list_top.xml',
-              subscription: 'theme/sections/subscription.xml',
+              header: {
+                main: 'theme/sections/header/main.xml',
+                section: 'theme/sections/header/section.xml',
+                search_top: 'theme/sections/header/search_top.xml',
+                // Display place is unknown
+                page_list_top: 'theme/sections/header/page_list_top.xml',
+                subscription: 'theme/sections/header/subscription.xml',
+              },
+
               vertical_ad_container: 'theme/sections/vertical_ad_container.xml',
 
               sidebar: {

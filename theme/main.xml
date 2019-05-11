@@ -426,62 +426,10 @@
             <b:if cond='not data:view.isSingleItem'>
               <div class='centered-top-placeholder'/>
             </b:if>
-            <header class='centered-top-container' role='banner'>
-              <b:class cond='data:view.isSingleItem' name='sticky'/>
-              <div class='centered-top'>
-                <b:class cond='data:view.isSearch and data:view.search.query' name='search-focused'/>
 
-                <b:if cond='data:view.isSingleItem'>
-                  <a class='return_link' expr:href='data:blog.homepageUrl'>
-                    <b:include data='{ iconClass: &quot;touch-icon back-button rtl-reversible-icon&quot; }' name='backArrowIcon'/>
-                  </a>
-                <b:else/>
-                  <div class='hamburger-section'>
-                    <b:include data='{ iconClass: &quot;touch-icon hamburger-menu&quot; }' name='menuIcon'/>
-                  </div>
-                </b:if>
+            <!-- build:section recursive section.header.main -->
+            <!-- /build -->
 
-                <div class='blog-name'>
-                  <!-- build:section section.header -->
-                  <!-- /build -->
-                </div>
-
-                <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>
-                  <div class='search'>
-                    <b:class cond='data:view.isSearch and data:view.search.query' name='focused'/>
-                    <button class='search-expand touch-icon-button' expr:aria-label='data:messages.search.escaped'>
-                      <div class='search-expand-text'><data:messages.search/></div>
-                      <b:include data='{ iconClass: &quot;touch-icon search-expand-icon&quot; }' name='searchIcon'/>
-                    </button>
-                    <!-- build:section recursive section.search_top -->
-                    <!-- /build -->
-                  </div>
-                </b:if>
-
-                <b:if cond='data:view.isLayoutMode                             or data:widgets any (w =&gt; w.sectionId == &quot;subscription&quot;)'>
-                  <section class='subscribe-section-container'>
-                    <button class='subscribe-button'><b:eval expr='data:messages.subscribe'/></button>
-                    <div class='subscribe-popup-container'>
-                      <div aria-labelledby='subscribe-title' class='subscribe-popup dialog hidden' role='dialog' tabindex='-1'>
-                        <div role='document'>
-                          <h3 class='subscribe-title' id='subscribe-title'><b:eval expr='data:messages.subscribeToThisBlog'/></h3>
-                          <!-- build:section recursive section.subscription -->
-                          <!-- /build -->
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </b:if>
-
-                <b:if cond='data:view.isLayoutMode or not data:view.isSingleItem'>
-                  <nav class='top-nav' role='navigation'>
-                    <!-- build:section recursive section.page_list_top -->
-                    <!-- /build -->
-                  </nav>
-                </b:if>
-              </div>
-
-            </header>
             <div class='centered-bottom'>
               <b:if cond='data:view.isArchive or (data:view.isSearch and data:view.search.resultsMessage)'>
                 <div class='post-filter-message'>
