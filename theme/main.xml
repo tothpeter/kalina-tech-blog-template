@@ -1014,8 +1014,8 @@
         </div>  <!-- close page_body -->
       </b:with>
 
-      <!-- Footer  -->
-      <b:section id='footer' name='Footer' showaddelement='false' tag='footer'/>
+      <!-- build:section recursive section.footer -->
+      <!-- /build -->
     </div>
 
     <b:template-script async='true' name='vegeclub' version='1.0.0'/>
