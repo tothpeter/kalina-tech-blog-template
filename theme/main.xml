@@ -428,7 +428,7 @@
                       <b:widget-setting name='text-1'>About</b:widget-setting>
                       <b:widget-setting name='link-1'>/p/about_19.html</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
-                      <b:widget-setting name='link-2'>http://www.what.energy/</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://www.what.energy/</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
                       <b:widget-setting name='text-2'>What Energy?</b:widget-setting>
                     </b:widget-settings>
@@ -515,7 +515,7 @@
                   <b:section id='header' name='Header' showaddelement='false'>
                     <b:widget id='Header1' locked='true' title='Kalina Tech (Header)' type='Header' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-2a_OhNDJElU/XLmQnNhSy7I/AAAAAAAABq0/7raVkgPGp74rxCr9JM7CsHZDxtIk9ajCgCK4BGAYYCw/s1600/header_big.png</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>https://2.bp.blogspot.com/-2a_OhNDJElU/XLmQnNhSy7I/AAAAAAAABq0/7raVkgPGp74rxCr9JM7CsHZDxtIk9ajCgCK4BGAYYCw/s1600/header_big.png</b:widget-setting>
                         <b:widget-setting name='displayHeight'>229</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='useImage'>true</b:widget-setting>
