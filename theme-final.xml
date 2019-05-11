@@ -4139,10 +4139,11 @@ background-repeat: no-repeat;
                 </div>
               </b:if>
 
-              <main class='main-container' id='main' role='main' tabindex='-1'>
-                <b:if cond='data:view.isMultipleItems'>
-                  <h2 class='main-heading'><data:messages.posts/></h2>
-                </b:if>
+
+<main class='main-container' id='main' role='main' tabindex='-1'>
+  <b:if cond='data:view.isMultipleItems'>
+    <h2 class='main-heading'><data:messages.posts/></h2>
+  </b:if>
 
 <b:section class='featured-post' id='featured_post' name='Featured Post' showaddelement='false'>
   <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='' type='FeaturedPost' version='2' visible='true'>
@@ -4771,7 +4772,8 @@ blogger.widgets.blog.initThreadedComments(
   </b:widget>
 </b:section>
 
-              </main>
+</main>
+
 
 <b:section ads='true' class='vertical-ad-container' id='ads' name='Ads' showaddelement='false'>
   <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='true'>

@@ -1,0 +1,11 @@
+<main class='main-container' id='main' role='main' tabindex='-1'>
+  <b:if cond='data:view.isMultipleItems'>
+    <h2 class='main-heading'><data:messages.posts/></h2>
+  </b:if>
+
+  <!-- build:section section.main.featured_post -->
+  <!-- /build -->
+
+  <!-- build:section recursive section.main.section -->
+  <!-- /build -->
+</main>

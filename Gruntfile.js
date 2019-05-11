@@ -35,7 +35,7 @@ module.exports = function(grunt) {
               },
               header: 'theme/sections/header.xml',
               search_top: 'theme/sections/search_top.xml',
-              featured_post: 'theme/sections/featured_post.xml',
+
               // Display place is unknown
               page_list_top: 'theme/sections/page_list_top.xml',
               subscription: 'theme/sections/subscription.xml',
@@ -47,7 +47,12 @@ module.exports = function(grunt) {
                 main: 'theme/sections/sidebar/main.xml'
               },
 
-              main: 'theme/sections/main.xml',
+              main: {
+                featured_post: 'theme/sections/main/featured_post.xml',
+                section: 'theme/sections/main/section.xml',
+                main: 'theme/sections/main/main.xml'
+              },
+
               footer: 'theme/sections/footer.xml',
             }
           }

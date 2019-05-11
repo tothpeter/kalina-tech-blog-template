@@ -498,17 +498,9 @@
                 </div>
               </b:if>
 
-              <main class='main-container' id='main' role='main' tabindex='-1'>
-                <b:if cond='data:view.isMultipleItems'>
-                  <h2 class='main-heading'><data:messages.posts/></h2>
-                </b:if>
 
-                <!-- build:section section.featured_post -->
-                <!-- /build -->
-
-                <!-- build:section recursive section.main -->
-                <!-- /build -->
-              </main>
+              <!-- build:section recursive section.main.main -->
+              <!-- /build -->
 
               <!-- build:section recursive section.vertical_ad_container -->
               <!-- /build -->
