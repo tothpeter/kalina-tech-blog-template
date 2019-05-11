@@ -8,15 +8,14 @@
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
 
-    <b:skin version='1.3.0'>
-      <![CDATA[
-        /* normalize Styles Starts */
+    <b:skin version='1.3.0'><![CDATA[
+      /* normalize Styles Starts */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-        /* normalize Styles Ends */
+      /* normalize Styles Ends */
 
-        /*
-        <!-- Variable definition starts -->
+      /*
+      <!-- Variable definition starts -->
 <Variable name="keycolor" description="Main Color" type="color" default="#8abc0d" value="#729c0b"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
@@ -188,10 +187,10 @@
   <Variable name="posts.width.stream" description="Post width (stream)" type="length" min="100px" max="1000px" default="385px"  value="385px"/>
 </Group>
 
-        <!-- Variable definition ends -->
-        */
+      <!-- Variable definition ends -->
+      */
 
-        /* Default Template Styles Starts */
+      /* Default Template Styles Starts */
 /*!************************************************
  * Blogger Template Style
  * Name: Emporio
@@ -2828,9 +2827,9 @@ display:none
   padding: 6px 10px;
 }
 
-        /* Default Template Styles Ends */
+      /* Default Template Styles Ends */
 
-        /* Own Styles Starts */
+      /* Own Styles Starts */
 @charset "UTF-8";
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+bash+ruby+git+yaml */
@@ -3433,9 +3432,8 @@ code.prism {
   padding: unset;
 }
 
-        /* Own Styles Ends */
-      ]]>
-    </b:skin>
+      /* Own Styles Ends */
+    ]]></b:skin>
 
     <b:template-skin>
       <![CDATA[
@@ -5072,8 +5070,7 @@ body#layout .search {
       </b:with>
 
       <!-- Footer  -->
-      <b:section id='footer' name='Footer' showaddelement='false' tag='footer'>
-      </b:section>
+      <b:section id='footer' name='Footer' showaddelement='false' tag='footer'/>
     </div>
 
     <b:template-script async='true' name='vegeclub' version='1.0.0'/>
