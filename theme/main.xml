@@ -32,14 +32,12 @@
       /* Own Styles Ends */
     ]]></b:skin>
 
-    <b:template-skin>
-      <![CDATA[
-        <!-- Default Template Skin Styles Starts -->
-        <!-- build:section default_template_skin -->
-        <!-- /build -->
-        <!-- Default Template Skin Styles Ends -->
-      ]]>
-    </b:template-skin>
+    <b:template-skin><![CDATA[
+      /* Default Template Skin Styles Starts */
+      <!-- build:section default_template_skin -->
+      <!-- /build -->
+      /* Default Template Skin Styles Ends */
+    ]]></b:template-skin>
 
     <b:if cond='data:skin.vars.body_background.image.isResizable'>
       <b:include cond='not data:view.isPreview' data='{                          image: data:skin.vars.body_background.image,                          selector: &quot;body&quot;                        }' name='responsiveImageStyle'/>
@@ -428,7 +426,7 @@
                       <b:widget-setting name='text-1'>About</b:widget-setting>
                       <b:widget-setting name='link-1'>/p/about_19.html</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
-                      <b:widget-setting name='link-2'>https://www.what.energy/</b:widget-setting>
+                      <b:widget-setting name='link-2'>http://www.what.energy/</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
                       <b:widget-setting name='text-2'>What Energy?</b:widget-setting>
                     </b:widget-settings>
