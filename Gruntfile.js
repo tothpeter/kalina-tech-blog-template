@@ -42,6 +42,7 @@ module.exports = function(grunt) {
               vertical_ad_container: 'theme/sections/vertical_ad_container.xml',
               sidebar_feed: 'theme/sections/sidebar_feed.xml',
               sidebar_item: 'theme/sections/sidebar_item.xml',
+              main: 'theme/sections/main.xml',
               footer: 'theme/sections/footer.xml',
             }
           }
