@@ -393,10 +393,6 @@
     <b:include data='blog' name='google-analytics'/>
 
     <script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'/>
-
-	  <!-- Syntax Highlighter Additions START -->
-    <script src='//cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert'/>
-    <!-- Syntax Highlighter Additions END -->
   </head>
 
   <body>
