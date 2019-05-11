@@ -28,14 +28,14 @@ module.exports = function(grunt) {
             variables: 'theme/variables.xml',
 
             section: {
-              header: 'theme/sections/header.xml',
-              search_top: 'theme/sections/search_top.xml',
-              featured_post: 'theme/sections/featured-post.xml',
               top_bar: {
                 main: 'theme/sections/top_bar/main.xml',
                 nav: 'theme/sections/top_bar/nav.xml',
                 social: 'theme/sections/top_bar/social.xml',
-              }
+              },
+              header: 'theme/sections/header.xml',
+              search_top: 'theme/sections/search_top.xml',
+              featured_post: 'theme/sections/featured_post.xml'
             }
           }
         }
