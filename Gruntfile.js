@@ -28,6 +28,7 @@ module.exports = function(grunt) {
             variables: 'theme/variables.xml',
 
             section: {
+              header: 'theme/sections/header.xml',
               featured_post: 'theme/sections/featured-post.xml',
               top_bar: {
                 main: 'theme/sections/top_bar/main.xml',
