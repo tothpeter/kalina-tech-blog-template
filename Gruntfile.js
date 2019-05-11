@@ -37,7 +37,8 @@ module.exports = function(grunt) {
               search_top: 'theme/sections/search_top.xml',
               featured_post: 'theme/sections/featured_post.xml',
               // Display place is unknown
-              page_list_top: 'theme/sections/page_list_top.xml'
+              page_list_top: 'theme/sections/page_list_top.xml',
+              subscription: 'theme/sections/subscription.xml'
             }
           }
         }
