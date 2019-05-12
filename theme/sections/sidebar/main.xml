@@ -1,15 +1,16 @@
 <aside class='sidebar-container container' role='complementary'>
-  <b:class cond='not data:view.isSingleItem' name='sidebar-invisible'/>
-  <b:if cond='not data:view.isSingleItem or data:view.isLayoutMode'>
-    <!-- Display different sidebars for feed page / item page. -->
-    <div class='navigation'>
-      <b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
-    </div>
-    <!-- build:section recursive section.sidebar.feed -->
-    <!-- /build -->
-  </b:if>
-  <b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
-    <!-- build:section recursive section.sidebar.item -->
-    <!-- /build -->
-  </b:if>
-</aside>   <!-- close sidebar-container -->
+	<b:class cond='not data:view.isSingleItem' name='sidebar-invisible'/>
+	<b:if cond='not data:view.isSingleItem or data:view.isLayoutMode'>
+		<!-- Display different sidebars for feed page / item page. -->
+		<div class='navigation'>
+			<b:include data='{ iconClass: &quot;touch-icon sidebar-back&quot; }' name='closeIcon'/>
+		</div>
+		<!-- build:section recursive section.sidebar.feed -->
+		<!-- /build -->
+	</b:if>
+	<b:if cond='data:view.isSingleItem or data:view.isLayoutMode'>
+		<!-- build:section recursive section.sidebar.item -->
+		<!-- /build -->
+	</b:if>
+</aside>
+<!-- close sidebar-container -->

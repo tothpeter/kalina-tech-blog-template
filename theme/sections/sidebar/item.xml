@@ -1,44 +1,44 @@
 <b:section id='sidebar_item' name='Sidebar (Item Page)'>
-  <b:widget cond='data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='Popular Posts' type='PopularPosts' visible='true'>
-    <b:widget-settings>
-      <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-      <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-      <b:widget-setting name='showSnippets'>true</b:widget-setting>
-      <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-<b:comment>Default the title to &#39;Popular posts from this blog&#39;.</b:comment>
-<b:with value='data:messages.popularPosts' var='defaultTitle'>
-<b:include name='super.main'/>
-</b:with>
-</b:includable>
-    <b:includable id='commentsLink'>
-<a class='comment-link' expr:href='data:post.commentsUrl ?: data:post.url' expr:onclick='data:post.commentsUrlOnclick'>
-<b:include name='commentIcon'/>
-<span class='num_comments'>
-<data:post.numberOfComments/>
-</span>
-</a>
-</b:includable>
-    <b:includable id='itemBody' var='post'>
-<div class='item-content'>
-<b:with value='&quot;popular-posts&quot;' var='snippetPrefix'>
-<b:include cond='data:postDisplay.showSnippet' data='post' name='postSnippet'/>
-</b:with>
-</div>
-</b:includable>
-    <b:includable id='snippetedPostContent'>
-<b:comment>Move the thumbnail outside of the body and above the title</b:comment>
-<b:include cond='data:postDisplay.showFeaturedImage and data:post.featuredImage.isResizable' data='post' name='snippetedPostThumbnail'/>
-<b:include data='post' name='snippetedPostTitle'/>
-<b:include data='post' name='itemBody'/>
-</b:includable>
-    <b:includable id='snippetedPostThumbnail'>
-<div class='item-thumbnail'>
-<a expr:href='data:post.url'>
-<b:include data='{                                  image: data:post.featuredImage,                                  imageSizes: [280,560,840,1120,1400]                                }' name='responsiveImage'/>
-</a>
-</div>
-</b:includable>
-  </b:widget>
+	<b:widget cond='data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='Popular Posts' type='PopularPosts' visible='true'>
+		<b:widget-settings>
+			<b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+			<b:widget-setting name='showThumbnails'>true</b:widget-setting>
+			<b:widget-setting name='showSnippets'>true</b:widget-setting>
+			<b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+		</b:widget-settings>
+		<b:includable id='main'>
+			<b:comment>Default the title to &#39;Popular posts from this blog&#39;.</b:comment>
+			<b:with value='data:messages.popularPosts' var='defaultTitle'>
+				<b:include name='super.main'/>
+			</b:with>
+		</b:includable>
+		<b:includable id='commentsLink'>
+			<a class='comment-link' expr:href='data:post.commentsUrl ?: data:post.url' expr:onclick='data:post.commentsUrlOnclick'>
+				<b:include name='commentIcon'/>
+				<span class='num_comments'>
+					<data:post.numberOfComments/>
+				</span>
+			</a>
+		</b:includable>
+		<b:includable id='itemBody' var='post'>
+			<div class='item-content'>
+				<b:with value='&quot;popular-posts&quot;' var='snippetPrefix'>
+					<b:include cond='data:postDisplay.showSnippet' data='post' name='postSnippet'/>
+				</b:with>
+			</div>
+		</b:includable>
+		<b:includable id='snippetedPostContent'>
+			<b:comment>Move the thumbnail outside of the body and above the title</b:comment>
+			<b:include cond='data:postDisplay.showFeaturedImage and data:post.featuredImage.isResizable' data='post' name='snippetedPostThumbnail'/>
+			<b:include data='post' name='snippetedPostTitle'/>
+			<b:include data='post' name='itemBody'/>
+		</b:includable>
+		<b:includable id='snippetedPostThumbnail'>
+			<div class='item-thumbnail'>
+				<a expr:href='data:post.url'>
+					<b:include data='{                                  image: data:post.featuredImage,                                  imageSizes: [280,560,840,1120,1400]                                }' name='responsiveImage'/>
+				</a>
+			</div>
+		</b:includable>
+	</b:widget>
 </b:section>
