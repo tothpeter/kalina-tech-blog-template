@@ -3432,6 +3432,11 @@ code.prism {
   padding: unset;
 }
 
+.updated {
+  font-size: 12px;
+  color: gray;
+}
+
       /* Own Styles Ends */
     ]]></b:skin>
 
