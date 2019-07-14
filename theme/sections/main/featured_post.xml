@@ -6,9 +6,9 @@
       <!-- Prod -->
       <!-- <b:widget-setting name='postId'>5754944957262589530</b:widget-setting> -->
       <!-- Stg -->
-      <b:widget-setting name='postId'>7006128772644136128</b:widget-setting>
+      <!-- <b:widget-setting name='postId'>7006128772644136128</b:widget-setting> -->
       <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main' var='this'>
 <b:include name='widget-title'/>
