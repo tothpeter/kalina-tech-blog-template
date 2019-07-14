@@ -8,7 +8,7 @@
     <title><data:view.title.escaped/></title>
     <!-- Twitter meta tags start -->
     <meta content='summary_large_image' name='twitter:card'/>
-    <meta content='@peter-toth' name='twitter:site'/>
+    <meta content='@KalinaTechBlog' name='twitter:site'/>
     <b:switch var='data:blog.pageType'>
       <b:case value='index'/>
         <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
@@ -18,10 +18,10 @@
     <b:if cond='data:blog.metaDescription != &quot;&quot;'>
       <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
     </b:if>
-    <meta content='@peter-toth' name='twitter:creator'/>
+    <meta content='@peter_toth_toma' name='twitter:creator'/>
     <b:switch var='data:blog.pageType'>
       <b:case value='item'/>
-        <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+        <meta expr:content='data:blog.postImageUrl' name='twitter:image:src'/>
       <b:default/>
       <meta content='img-url-for-home-page' name='twitter:image'/>
     </b:switch>
