@@ -3382,9 +3382,14 @@ code {
 .post-header .post-meta a {
   color: #757575;
 }
-.post-header .post-meta .post-author,
-.post-header .post-meta .post-date {
+.post-header .post-meta .post-author {
   margin: 0 10px 0 0;
+}
+.post-header .post-meta .fa {
+  margin-right: 2px;
+}
+.post-header .post-meta .separator {
+  margin: 0 4px;
 }
 
 /* On show page */
@@ -3457,11 +3462,6 @@ code {
 }
 code.prism {
   padding: unset;
-}
-
-.updated {
-  font-size: 12px;
-  color: gray;
 }
 
       /* Own Styles Ends */
@@ -4732,10 +4732,14 @@ BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
 </b:includable>
 <b:includable id='postTimestamp' var='post'>
 <div class='post-meta'>
-<i class="fa fa-user-o"></i>
-<span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
-<i class="fa fa-clock-o"></i>
-<time class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+  <i class="fa fa-user-o"></i>
+  <span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
+  <i class="fa fa-calendar"></i>
+  <time expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+  <b:if cond='data:post.date != data:post.lastUpdated and data:view.isSingleItem'>
+    <span class='separator'>|</span>
+    UPDATED: <time expr:datetime='data:post.lastUpdated.iso8601'><data:post.lastUpdated/></time>
+  </b:if>
 </div>
 </b:includable>
     <b:includable id='postWrapperClasses'>

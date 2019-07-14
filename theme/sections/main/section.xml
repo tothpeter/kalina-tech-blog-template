@@ -404,10 +404,14 @@ BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
 </b:includable>
 <b:includable id='postTimestamp' var='post'>
 <div class='post-meta'>
-<i class="fa fa-user-o"></i>
-<span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
-<i class="fa fa-clock-o"></i>
-<time class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+  <i class="fa fa-user-o"></i>
+  <span class='post-author'><a href="/p/about_19.html"><data:post.author.name/></a></span>
+  <i class="fa fa-calendar"></i>
+  <time expr:datetime='data:post.date.iso8601'><data:post.date/></time>
+  <b:if cond='data:post.date != data:post.lastUpdated and data:view.isSingleItem'>
+    <span class='separator'>|</span>
+    UPDATED: <time expr:datetime='data:post.lastUpdated.iso8601'><data:post.lastUpdated/></time>
+  </b:if>
 </div>
 </b:includable>
     <b:includable id='postWrapperClasses'>

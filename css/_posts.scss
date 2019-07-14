@@ -9,10 +9,17 @@
       color: $posts-byline-color;
     }
 
-    .post-author,
-		.post-date {
+    .post-author {
     	margin: 0 10px 0 0;
 		}
+
+    .fa {
+      margin-right: 2px;
+    }
+
+    .separator {
+      margin: 0 4px;
+    }
 	}
 }
 
