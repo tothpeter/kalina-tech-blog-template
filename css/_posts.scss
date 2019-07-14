@@ -22,10 +22,14 @@
 		margin-bottom: 10px;
 	}
 
-	.post-header .post-meta {
-		padding: 0 1px 6px;
-	  border-bottom: 1px solid #eaeaea;
-	}
+	.post-header {
+    margin-bottom: 25px;
+
+    .post-meta {
+  		padding: 0 1px 6px;
+  	  border-bottom: 1px solid #eaeaea;
+  	}
+  }
 }
 
 /* On landing page */

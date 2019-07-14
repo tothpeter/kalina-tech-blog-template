@@ -239,7 +239,6 @@ BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
 <b:else/>
 <b:include data='{ items: [&quot;author&quot;, &quot;timestamp&quot;, &quot;labels&quot;] }' name='headerBylineOverride'/>
 </b:if>
-<b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-top&quot;, overridden: true }' name='maybeAddShareButtons'/>
 </b:includable>
     <b:includable id='homePageLink'>
 <b:comment>We don&#39;t show home page links in Emporio.</b:comment>

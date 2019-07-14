@@ -41,7 +41,6 @@
 <b:else/>
 <b:include data='{ items: [&quot;author&quot;, &quot;timestamp&quot;, &quot;labels&quot;] }' name='headerBylineOverride'/>
 </b:if>
-<b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-top&quot;, overridden: true }' name='maybeAddShareButtons'/>
 </b:includable>
     <b:includable id='postLabels'>
 <b:if cond='data:view.isMultipleItems'>
