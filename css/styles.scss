@@ -1,7 +1,6 @@
 @import 'variables';
 
 @import 'prism';
-@import 'stackedit';
 @import 'top_bar';
 @import 'social_icon';
 
@@ -37,6 +36,8 @@ iframe {
 }
 
 code {
+  background-color: rgba(0,0,0,.05);
+  border-radius: 3px;
   padding: 2px 4px;
 
   &.prism {

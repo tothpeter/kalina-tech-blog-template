@@ -2974,12 +2974,6 @@ pre[class*="language-"] {
   color: green;
 }
 
-/* Stackedit */
-code {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
-}
-
 /* Top Bar CSS */
 #top-bar {
   width: 100%;
@@ -3458,6 +3452,8 @@ iframe {
   }
 }
 code {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
   padding: 2px 4px;
 }
 code.prism {
