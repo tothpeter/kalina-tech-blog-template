@@ -231,7 +231,14 @@ BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
 <b:else/>
 <b:include data='{ items: [[&quot;comments&quot;]] }' name='footerBylinesOverride'/>
 </b:if>
-<b:include data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
+
+
+<b:if cond='data:view.isSingleItem'>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <div class="addthis_inline_share_toolbox"></div>
+<b:else/>
+  <b:include data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
+</b:if>
 </b:includable>
     <b:includable id='headerByline'>
 <b:if cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;'>
