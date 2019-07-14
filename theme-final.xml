@@ -6,6 +6,27 @@
     <link href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <title><data:view.title.escaped/></title>
+    <!-- Twitter meta tags start -->
+    <meta content='summary_large_image' name='twitter:card'/>
+    <meta content='@peter-toth' name='twitter:site'/>
+    <b:switch var='data:blog.pageType'>
+      <b:case value='index'/>
+        <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+      <b:default/>
+      <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    </b:switch>
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+    </b:if>
+    <meta content='@peter-toth' name='twitter:creator'/>
+    <b:switch var='data:blog.pageType'>
+      <b:case value='item'/>
+        <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+      <b:default/>
+      <meta content='img-url-for-home-page' name='twitter:image'/>
+    </b:switch>
+    <!-- Twitter meta tags end -->
+
     <b:include data='blog' name='all-head-content'/>
 
     <b:skin version='1.3.0'><![CDATA[
