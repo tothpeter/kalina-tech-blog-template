@@ -145,7 +145,7 @@
   <Variable name="posts.byline.font" description="Post byline font" type="font" default="$(bylineFont)"  value="italic 400 12px Helvetica, Arial, Merriweather, Georgia, serif"/>
   <Variable name="posts.text.font" description="Post text font" type="font" default="$(bodyFont)"  value="400 16px Helvetica, Arial, Merriweather, Georgia, serif"/>
   <Variable name="posts.text.color" description="Post text color" type="color" default="$(body.text.color)"  value="#000000"/>
-  <Variable name="posts.text.lineHeight" description="Post text line height" min="10px" max="60px" type="length" default="$(bodyLineHeight)"  value="32px"/>
+  <Variable name="posts.text.lineHeight" description="Post text line height" min="10px" max="60px" type="length" default="$(bodyLineHeight)"  value="30px"/>
   <Variable name="posts.snippet.text.font" description="Post snippet text font" type="font" default="$(bodyFontSmall)"  value="400 14px Helvetica, Arial, Merriweather, Georgia, serif"/>
   <Variable name="posts.snippet.text.lineHeight" description="Post snippet text line height" min="10px" max="60px" type="length" default="$(bodyLineHeightSmall)"  value="24px"/>
   <Variable name="posts.link.color" description="Post link color" type="color" default="$(body.link.color)"  value="#729c0b"/>
