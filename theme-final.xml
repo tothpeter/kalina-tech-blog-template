@@ -2852,8 +2852,8 @@ display:none
 
       /* Own Styles Starts */
 @charset "UTF-8";
-/* PrismJS 1.16.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+bash+ruby+git+yaml */
+/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+gherkin+sql&plugins=autoloader */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
